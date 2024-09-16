@@ -1,0 +1,23 @@
+// for links on the homepage- directly connected to their color because of the diamonds connected with them
+
+@mixin linkcolor($color-name) {
+	a:link, a:visited {
+		background-color: $color-name;
+		color: black;
+  		padding: 14px 25px;
+  		border-radius: 8px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+	}
+
+// creates a button for the link that is the same color as the diamond
+	
+	a:hover, a:active {
+		background-color: lighten($color-name, 20%);
+		text-decoration: underline;
+	}
+
+// means when you hover over the button, the button gets slightly lighter in color than the diamond
+
+}

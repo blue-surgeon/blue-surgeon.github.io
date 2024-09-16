@@ -1,0 +1,16 @@
+//homepage_diamonds
+
+@mixin linkcolor($color-name) {
+	a:link, a:visited {
+		background-color: $color-name;
+		color: black;
+  		padding: 14px 25px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+	}
+	a:hover, a:active {
+		background-color: lighten($color-name, 20%);
+		text-decoration: underline;
+	}
+}
