@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../../_sass/slurp.scss"],"names":[],"mappings":"AAEA,KACE,eACA","sourcesContent":["//slurp.scss\n\nbody {\n  font-size: 18px;\n  font-family: Arial;\n}"],"file":"main.css"}
+{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","sourcesContent":[],"file":"main.css"}

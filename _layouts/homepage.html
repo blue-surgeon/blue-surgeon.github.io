@@ -3,16 +3,28 @@
 ---
 <!DOCTYPE html> 
 <html>
+
 <head>
 <body style="background-color:#0102E1;">
 
 <style>
-.center-screen {
-  display: flex;
-  flex-direction: column;
+.center-screen2 {
+  display: inline-flex;
+  position: relative;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+.center-screen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 .font {
 	font-size: 24em;
@@ -24,92 +36,156 @@
 	text-shadow: #C967E4 1px 0 100px;
 	line-height: 0.55em;
 }
-button {
+.button {
 	z-index: 999 !important;
-  background-color: rgba(51, 51, 51, 0.05);
-  border-radius: 8px;
-  border-width: 0;
-  color: #333333;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 10px 12px;
+  color: black;
+  padding: 10px 10px;
+  border-radius: 40px;
   text-align: center;
-  transition: all 200ms;
-  vertical-align: baseline;
-  white-space: nowrap;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  font-size: 3em;
+  /* I want font size to vary with the size of the image */
+  font-family: "DIN alternate";
+	font-stretch: ultra-condensed;
+	text-decoration: none;
+	position: absolute;
+} 
+.button:hover {
+	background-color: hotpink;
 }
 #orange_diamond {
-	position: fixed;
-	z-index: -900;
-	transform: translate(-190%, 2%);
+	position: absolute; 
+	left: 13%;
+	top: 27%;
+	z-index: 998;
+	/* transform: translate(220%, 15%); */
+	width: auto;
+	height: auto;
 }
 #red_diamond { 
-	position: fixed;
-	z-index: 998;
-	transform: translate(24%, -20%);
+	position: absolute;
+	left: 46%;
+	top: 0%; 
+	z-index: -999;
+	/* transform: translate(220%, 15%); */
+	/*background-size: cover;*/
+	height:auto;
+	width:auto;
 }
 #yellow_diamond { 
-	position: fixed;
-	z-index: -699;
-	transform: translate(140%, 30%);
+	position: absolute;
+	right: 18%;
+	top: 64%;
+	z-index: 998;
+	/* transform: translate(220%, 15%); */
+	/*background-size: contain;*/
+	height: auto;
+	width:auto;
 }
 #purple_diamond { 
-	position: fixed;
-	z-index: -650;
-	transform: translate(220%, 15%);
+	position: absolute;
+	right: 20%;
+	bottom: 0%;
+	z-index: 999;
+	/* transorm: translate(220%, 15%); */
+	width: auto;
+	height: 32%;
 }
 #greenred_diamond { 
-	position: fixed;
-	z-index: -600;
-	transform: translate(-117%,40%)
+	position: absolute;
+	left: 24.8%;
+	top: 59%;
+	z-index: -999;
+	/* transform: translate(220%, 15%); */
+	width: auto;
 }
 #bluepink_diamond { 
-	position: fixed;
+	position: absolute;
+	left: 50%;
+	top: 60%;
 	height: 30%;
-	z-index: -500;
-	transform: translate(120%,20%)
+	z-index: -999;
+	/* transform: translate(220%, 15%); */
+		width: auto;
 }
 
 </style>
 <body>
 
+<!--
 <div class="center-screen">
-  <img id= "orange_diamond" src="/assets/images/orange_diamond.png" alt="orange diamond"
+  <img id= "orange_diamond" src="/assets/images/orange_diamond.png" alt="orange diamond">
 </div>
 
 <div class="center-screen">
-<img id= "red_diamond" src="/assets/images/red_diamond.png" alt="red diamond"
+<img id= "red_diamond" src="/assets/images/red_diamond.png" alt="red diamond">
 </div>
 
 <div class="center-screen">
-<img id= "yellow_diamond" src="/assets/images/yellow_diamond.png" alt="yellow diamond"
+<img id= "yellow_diamond" src="/assets/images/yellow_diamond.png" alt="yellow diamond">
 </div>
 
 <div class="center-screen">
-<img id= "purple_diamond" src="/assets/images/purple_diamond.png" alt="purple diamond"
+<img id= "purple_diamond" src="/assets/images/purple_diamond.png" alt="purple diamond">
 </div>
 
 <div class="center-screen">
-<img id= "greenred_diamond" src="/assets/images/greenred_diamond.png" alt="green & red diamond"
+<img id= "greenred_diamond" src="/assets/images/greenred_diamond.png" alt="green & red diamond">
 </div>
 
 <div class="center-screen">
-<img id= "bluepink_diamond" src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond"
+<img id= "bluepink_diamond" src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond">
 </div>
 
 <div class="center-screen">
    <p class="font"> BLUE<br>&nbsp;&nbsp;&nbsp;&nbsp;surgeon </p>
 </div>
+-->
+
+<!--<div class="center-screen">
+	<img id= "red_diamond" src="/assets/images/red_diamond.png" alt="red diamond">
+	<img id= "orange_diamond" src="/assets/images/orange_diamond.png" alt="orange diamond">
+	<img id= "yellow_diamond" src="/assets/images/yellow_diamond.png" alt="yellow diamond">
+	<p class="font"> BLUE<br>&nbsp;&nbsp;&nbsp;&nbsp;surgeon </p>
+	<img id= "purple_diamond" src="/assets/images/purple_diamond.png" alt="purple diamond">
+	<img id= "greenred_diamond" src="/assets/images/greenred_diamond.png" alt="green & red diamond">
+	<img id= "bluepink_diamond" src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond">
+</div>*/-->
   
+<div class="center-screen2">
+	<div class="center-screen" id="red_diamond">
+		<img src="/assets/images/red_diamond.png" alt="red diamond">
+		<a href="https://google.com" class="button">
+			latest<br>post
+		</a>
+	</div>
+	<div class="center-screen" id="orange_diamond">
+		<img src="/assets/images/orange_diamond.png" alt="orange diamond">
+		<a href="https://google.com" class="button">
+			archive
+		</a>
+	</div>
+	<img id= "yellow_diamond" src="/assets/images/yellow_diamond.png" alt="yellow diamond">
+	<div class="center-screen" id="purple_diamond">
+		<img src="/assets/images/purple_diamond.png" alt="purple diamond">
+			<a href="google.com" class="button">
+				contact<br>me
+			</a>
+	</div>
+	<div class="center-screen" id="greenred_diamond">
+		<img src="/assets/images/greenred_diamond.png" alt="green & red diamond">
+		 <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+  /* create object called form for the subscription fillout jawn */
+</form> 
+</div>
+	<img id= "bluepink_diamond" src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond">
+	<div class="center-screen" style="margin-top: 20%">
+		<p class="font"> BLUE<br>&nbsp;&nbsp;&nbsp;&nbsp;surgeon </p>
+	</div>
+</div>
 
 </body>
 </html>
