@@ -1,16 +1,18 @@
 //homepage_diamonds
 
-@mixin linkcolor($color-name) {
+@mixin link($fontsize) {
 	a:link, a:visited {
-		background-color: $color-name;
+		background-color: transparent;
 		color: black;
   		padding: 14px 25px;
+  		border-radius: 8px;
+		text-decoration: none;
   		text-align: center;
   		text-decoration: none;
   		display: inline-block;
+  		font-size: $fontsize;
 	}
 	a:hover, a:active {
-		background-color: lighten($color-name, 20%);
-		text-decoration: underline;
+		background-color: rgba(255,255,255,0.5);
 	}
 }

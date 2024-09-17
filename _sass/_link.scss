@@ -1,0 +1,28 @@
+//links on homepage and perhaps other places
+
+@mixin link($fontsize) {
+	a:link, a:visited {
+
+		z-index: 999;
+		position: absolute;
+		display: inline-block;
+
+		background-color: transparent;
+		color: light gray;
+  		padding: 10px 8px;
+  		border-radius: 10px;
+
+		text-decoration: none;
+  		text-align: center;
+  		text-decoration: none;
+
+  		font-size: $fontsize;
+  		font-family: "DIN alternate";
+		font-stretch: ultra-condensed;
+	}
+	a:hover, a:active {
+		text-decoration: underline;
+		text-decoration-thickness: 10%;
+		color: black;
+	}
+}

@@ -35,28 +35,39 @@
 	text-align: start;
 	text-shadow: #C967E4 1px 0 100px;
 	line-height: 0.55em;
+	z-index: 500;
 }
 .button {
 	z-index: 999 !important;
-  color: black;
-  padding: 10px 10px;
-  border-radius: 40px;
+  color: light gray;
+  padding: 10px 8px;
+  border-radius: 10px; 
   text-align: center;
   font-size: 3em;
   /* I want font size to vary with the size of the image */
-  font-family: "DIN alternate";
-	font-stretch: ultra-condensed;
+  font-family: "Monaco";
+	/*font-stretch: ultra-condensed;*/
 	text-decoration: none;
 	position: absolute;
 } 
 .button:hover {
-	background-color: hotpink;
+	text-decoration: underline;
+	text-decoration-thickness: 10%;
+	color: black;
 }
+/*.hovering:hover {
+	font-size: 32px;
+	font-family: "DIN-alternate";
+	background-color: white;
+	color: #0102E1;
+	position: absolute;
+	z-index: 900;
+}*/
 #orange_diamond {
 	position: absolute; 
 	left: 13%;
 	top: 27%;
-	z-index: 998;
+	z-index: 800;
 	/* transform: translate(220%, 15%); */
 	width: auto;
 	height: auto;
@@ -65,7 +76,7 @@
 	position: absolute;
 	left: 46%;
 	top: 0%; 
-	z-index: -999;
+	/*z-index: 1;*/
 	/* transform: translate(220%, 15%); */
 	/*background-size: cover;*/
 	height:auto;
@@ -75,7 +86,7 @@
 	position: absolute;
 	right: 18%;
 	top: 64%;
-	z-index: 998;
+	/*z-index: 600;*/
 	/* transform: translate(220%, 15%); */
 	/*background-size: contain;*/
 	height: auto;
@@ -83,27 +94,28 @@
 }
 #purple_diamond { 
 	position: absolute;
-	right: 20%;
+	right: 19%;
 	bottom: 0%;
-	z-index: 999;
+	z-index: 700;
 	/* transorm: translate(220%, 15%); */
 	width: auto;
 	height: 32%;
 }
 #greenred_diamond { 
 	position: absolute;
-	left: 24.8%;
-	top: 59%;
-	z-index: -999;
+	left: 24.4%;
+	top: 61%;
+	/*z-index: 400;*/
 	/* transform: translate(220%, 15%); */
 	width: auto;
+	height: auto;
 }
 #bluepink_diamond { 
 	position: absolute;
-	left: 50%;
+	left: 48%;
 	top: 60%;
 	height: 30%;
-	z-index: -999;
+	/*z-index: 300;*/
 	/* transform: translate(220%, 15%); */
 		width: auto;
 }
@@ -152,36 +164,39 @@
 </div>*/-->
   
 <div class="center-screen2">
-	<div class="center-screen" id="red_diamond">
-		<img src="/assets/images/red_diamond.png" alt="red diamond">
-		<a href="https://google.com" class="button">
-			latest<br>post
-		</a>
-	</div>
 	<div class="center-screen" id="orange_diamond">
 		<img src="/assets/images/orange_diamond.png" alt="orange diamond">
-		<a href="https://google.com" class="button">
+		<a href="#" class="button" style="font-size: 4.2em">
 			archive
 		</a>
 	</div>
-	<img id= "yellow_diamond" src="/assets/images/yellow_diamond.png" alt="yellow diamond">
+	<div class="center-screen" id="red_diamond">
+		<img src="/assets/images/red_diamond.png" alt="red diamond" style="z-index: 1">
+		<a href="#" class="button" style="font-size: 4em">
+			latest<br>post
+		</a>
+	</div>
+	<div class="center-screen" id="yellow_diamond">
+		<img src="/assets/images/yellow_diamond.png" alt="yellow diamond" style="z-index: 600">
+		<a href="#" class="button">
+			subscribe
+		</a>
+	</div>
 	<div class="center-screen" id="purple_diamond">
 		<img src="/assets/images/purple_diamond.png" alt="purple diamond">
-			<a href="google.com" class="button">
-				contact<br>me
+			<a href="#" class="button">
+				contact
 			</a>
 	</div>
 	<div class="center-screen" id="greenred_diamond">
-		<img src="/assets/images/greenred_diamond.png" alt="green & red diamond">
-		 <form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
-  /* create object called form for the subscription fillout jawn */
-</form> 
-</div>
-	<img id= "bluepink_diamond" src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond">
+		<img src="/assets/images/greenred_diamond.png" alt="green & red diamond" style="z-index: 400">
+		<a href="#" class="button" style="font-size: 2.6em">
+			about
+		</a>
+	</div>
+	<div class="center-screen" id= "bluepink_diamond">
+		<img src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond" style="z-index: 300" title="slurps up">
+	</div>
 	<div class="center-screen" style="margin-top: 20%">
 		<p class="font"> BLUE<br>&nbsp;&nbsp;&nbsp;&nbsp;surgeon </p>
 	</div>
