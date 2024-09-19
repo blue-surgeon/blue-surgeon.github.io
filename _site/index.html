@@ -1,16 +1,19 @@
 <!DOCTYPE html> 
 <html>
-
 <head>
-<body style="background-color:#0102E1;">
+<body>
 
 <style>
+html {
+	height: 100%;
+}
 body {
-	/*max-width: 100%;
-	height: auto
-	overflow: hidden;*/
-	zoom: 53.5%;
+	background-color: #0102E1;
+	min-height: 100%;
+	width: 100%;
+	zoom: 53%;
 	font-size: 16px;
+	margin: 0;
 }
 .center-screen2 {
   display: inline-flex;
@@ -21,16 +24,23 @@ body {
   width: 100%;
   height: 100%;
 }
+/*@media screen and (max-width: 1000px) {
+	.center-screen2 {
+		flex-direction: column;
+	}
+}*/
 .center-screen {
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row;*/
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-}
+  /*width: 100%;
+  min-height: 100%;
+  height: 100%;*/
+ }
 .font {
-	font-size: 20vw;
+	/*font-size: 20vw;*/
+	font-size: 26em;
 	font-family: "DIN alternate";
 	font-stretch: ultra-condensed;
 	color: white;
@@ -40,6 +50,11 @@ body {
 	line-height: 0.55em;
 	z-index: 500;
 }
+@media screen and (max-width: 1000px) {
+	.font {
+		line-height: 2.5em;
+	}
+}
 .button {
 	z-index: 999 !important;
   color: light gray;
@@ -47,7 +62,6 @@ body {
   border-radius: 10px; 
   text-align: center;
   font-size: 3em;
-  /* I want font size to vary with the size of the image */
   font-family: "Monaco";
 	/*font-stretch: ultra-condensed;*/
 	text-decoration: none;
@@ -68,22 +82,23 @@ body {
 }*/
 #orange_diamond {
 	position: absolute; 
-	left: 13%;
+	right: 62%;
 	top: 27%;
+	/*bottom: -13%;*/
 	z-index: 800;
 	/* transform: translate(220%, 15%); */
-	width: auto;
-	height: auto;
+	/*width: auto;
+	height: auto;*/
 }
 #red_diamond { 
 	position: absolute;
 	left: 46%;
-	top: 0%; 
+	top: 0%;
 	/*z-index: 1;*/
 	/* transform: translate(220%, 15%); */
 	/*background-size: cover;*/
-	height:auto;
-	width:auto;
+	/*height:auto;
+	width:auto;*/
 }
 #yellow_diamond { 
 	position: absolute;
@@ -92,35 +107,37 @@ body {
 	/*z-index: 600;*/
 	/* transform: translate(220%, 15%); */
 	/*background-size: contain;*/
-	height: auto;
-	width:auto;
+	/*height: auto;
+	width:auto;*/
 }
 #purple_diamond { 
 	position: absolute;
-	right: 18%;
+	left: 70%;
 	bottom: 0%;
 	z-index: 700;
 	/* transorm: translate(220%, 15%); */
-	width: auto;
-	height: 32%;
+	/*width: auto;
+	height: auto;*/
 }
 #greenred_diamond { 
 	position: absolute;
 	left: 25.5%;
+	/*bottom: -20%;*/
+	/*right: 53%;*/
 	top: 61%;
 	/*z-index: 400;*/
 	/* transform: translate(220%, 15%); */
-	width: auto;
-	height: auto;
+	/*width: auto;
+	height: auto;*/
 }
 #bluepink_diamond { 
 	position: absolute;
 	left: 48%;
 	top: 60%;
-	height: 30%;
-	/*z-index: 300;*/
-	/* transform: translate(220%, 15%); */
-		width: auto;
+	/*height: auto;
+	z-index: 300;*/
+	/* transform: translate(220%, 15%); 
+		width: auto;*/
 }
 
 </style>
@@ -165,7 +182,7 @@ body {
 	<img id= "greenred_diamond" src="/assets/images/greenred_diamond.png" alt="green & red diamond">
 	<img id= "bluepink_diamond" src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond">
 </div>*/-->
-  
+ 
 <div class="center-screen2">
 	<div class="center-screen" id="orange_diamond">
 		<img src="/assets/images/orange_diamond.png" alt="orange diamond">
