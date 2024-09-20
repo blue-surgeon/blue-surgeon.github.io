@@ -42,20 +42,38 @@ body {
   height: 100%;*/
  }
 .font {
-	/*font-size: 20vw;*/
-	font-size: 26em;
+	font-size: 50vmin;
+	/*font-size: 26em;*/
 	font-family: "DIN alternate";
 	font-stretch: ultra-condensed;
 	color: white;
 	letter-spacing: -0.05em;
-	text-align: start;
-	text-shadow: #C967E4 1px 0 100px;
+	text-align: center;
+	text-shadow: #C967E4 0 0 0.2em;
+	/*line-height: 0.55em;*/
 	line-height: 0.55em;
 	z-index: 500;
+	animation-name: title;
+	animation-duration: 10s;
+  animation-iteration-count: 1;
+}
+@keyframes title {
+	/*0% {color:white; text-shadow:#C967E4 0 0 0.1em; z-index: 500}
+	9% {color:white; text-shadow:#C967E4 0 0 0.5em; z-index: 500}*/
+	0% {color:blue; text-shadow:yellow 0 0 0.3em; z-index: 0}
+	15% {color:blue; text-shadow:yellow 0 0 0.3em; z-index: 250}
+	30% {color:blue; text-shadow:yellow 0 0 0.3em; z-index: 350}
+	45% {color:blue; text-shadow:yellow 0 0 0.3em; z-index: 500}
+	60% {color:blue; text-shadow:yellow 0 0 0.2em; z-index: 700}
+	75% {color:blue; text-shadow:yellow 0 0 0.1em; z-index: 900}
+	99% {color:white; text-shadow:#C967E4 0 0 0.2em; z-index: 350}
+	100% {color:white; text-shadow:#C967E4 0 0 0.2em; z-index: 500}
 }
 @media screen and (max-width: 1000px) {
 	.font {
-		line-height: 2.5em;
+		line-height: 28vh;
+		text-shadow: #C967E4 0 0 0.5em;
+		transform: translate(5%, 0%);
 	}
 }
 .button {
@@ -85,17 +103,16 @@ body {
 }*/
 #orange_diamond {
 	position: absolute; 
-	right: 62%;
-	top: 27%;
+	left: 8%;
+	top: 55%
 	/*bottom: -13%;*/
-	z-index: 800;
 	/* transform: translate(220%, 15%); */
 	/*width: auto;
 	height: auto;*/
 }
 #red_diamond { 
 	position: absolute;
-	left: 46%;
+	right: 56%;
 	top: 0%;
 	/*z-index: 1;*/
 	/* transform: translate(220%, 15%); */
@@ -105,7 +122,7 @@ body {
 }
 #yellow_diamond { 
 	position: absolute;
-	right: 18%;
+	right: 15%;
 	top: 64%;
 	/*z-index: 600;*/
 	/* transform: translate(220%, 15%); */
@@ -115,7 +132,7 @@ body {
 }
 #purple_diamond { 
 	position: absolute;
-	left: 70%;
+	left: 74%;
 	bottom: 0%;
 	z-index: 700;
 	/* transorm: translate(220%, 15%); */
@@ -124,10 +141,10 @@ body {
 }
 #greenred_diamond { 
 	position: absolute;
-	left: 25.5%;
+	left: 61%;
 	/*bottom: -20%;*/
 	/*right: 53%;*/
-	top: 61%;
+	top: 9%;
 	/*z-index: 400;*/
 	/* transform: translate(220%, 15%); */
 	/*width: auto;
@@ -135,8 +152,8 @@ body {
 }
 #bluepink_diamond { 
 	position: absolute;
-	left: 48%;
-	top: 60%;
+	left: 60%;
+	top: 30%;
 	/*height: auto;
 	z-index: 300;*/
 	/* transform: translate(220%, 15%); 
@@ -188,13 +205,13 @@ body {
  
 <div class="center-screen2">
 	<div class="center-screen" id="orange_diamond">
-		<img src="/assets/images/orange_diamond.png" alt="orange diamond">
+		<img src="/assets/images/orange_diamond.png" alt="orange diamond" style="	z-index: 1">
 		<a href="#" class="button" style="font-size: 4.2em">
 			archive
 		</a>
 	</div>
 	<div class="center-screen" id="red_diamond">
-		<img src="/assets/images/red_diamond.png" alt="red diamond" style="z-index: 1">
+		<img src="/assets/images/red_diamond.png" alt="red diamond" style="z-index: 800">
 		<a href="#" class="button" style="font-size: 4em">
 			latest<br>post
 		</a>
@@ -220,8 +237,8 @@ body {
 	<div class="center-screen" id= "bluepink_diamond">
 		<img src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond" style="z-index: 300" title="slurps up">
 	</div>
-	<div class="center-screen" style="margin-top: 20%">
-		<p class="font"> BLUE<br>&nbsp;&nbsp;&nbsp;&nbsp;surgeon </p>
+	<div class="center-screen" style="margin-top: 10%">
+		<p class="font"> <br>BLUE<br><!--&nbsp;&nbsp;&nbsp;&nbsp;-->surgeon </p>
 	</div>
 </div>
 
