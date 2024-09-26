@@ -13,67 +13,62 @@ html {
 body {
 	background-color: #0102E1;
 	min-height: 100%;
-	width: 100%;
-	zoom: 53%;
+	/*width: 100%;*/
+	/*zoom: 53%;*/
 	font-size: 16px;
 	margin: 0;
+	padding: 20px;
 }
-.center-screen2 {
-  display: inline-flex;
-  position: relative;
-  flex-direction: row;
+.parent {
+  display: flex;
+ flex-direction: row;
+ margin-top: 50vh;
+ /*margin-bottom: 50vh;*/
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
 }
-/*@media screen and (max-width: 1000px) {
-	.center-screen2 {
-		flex-direction: column;
-	}
-}*/
-.center-screen {
+@media screen and (orientation: portrait) {
+ 	.diamondchild {
+ 		flex-direction: column;
+ 	}
+ }
+.textchild {
+  display: flex;
+  position: relative;
+  /*flex-direction: row;*/
+  /*min-height: 100%;*/
+  /*height: 100%;*/
+ }
+ .diamondchild {
   display: flex;
   /*flex-direction: row;*/
   justify-content: center;
   align-items: center;
-  /*width: 100%;
-  min-height: 100%;
-  height: 100%;*/
  }
+ /*I@media screen and (max-width: 650px) {
+ 	.diamondchild {
+ 		transform: scale(1.5, 1.5);
+ 	}
+ }*/
 .font {
-	font-size: 50vmin;
-	/*font-size: 26em;*/
+	/*font-size: 48vmin;*/
+	font-size: 15em;
 	font-family: "DIN alternate";
 	font-stretch: ultra-condensed;
 	color: white;
 	letter-spacing: -0.05em;
 	text-align: center;
 	text-shadow: #C967E4 0 0 0.2em;
-	/*line-height: 0.55em;*/
 	line-height: 0.55em;
 	z-index: 500;
-	animation-name: title;
-	animation-duration: 10s;
-  animation-iteration-count: 1;
+	animation: glow 3s ease-in-out infinite alternate;
 }
-@keyframes title {
-	/*0% {color:white; text-shadow:#C967E4 0 0 0.1em; z-index: 500}
-	9% {color:white; text-shadow:#C967E4 0 0 0.5em; z-index: 500}*/
-	0% {color:blue; text-shadow:yellow 0 0 0.3em; z-index: 0}
-	15% {color:blue; text-shadow:yellow 0 0 0.3em; z-index: 250}
-	30% {color:blue; text-shadow:yellow 0 0 0.3em; z-index: 350}
-	45% {color:blue; text-shadow:yellow 0 0 0.3em; z-index: 500}
-	60% {color:blue; text-shadow:yellow 0 0 0.2em; z-index: 700}
-	75% {color:blue; text-shadow:yellow 0 0 0.1em; z-index: 900}
-	99% {color:white; text-shadow:#C967E4 0 0 0.2em; z-index: 350}
-	100% {color:white; text-shadow:#C967E4 0 0 0.2em; z-index: 500}
-}
-@media screen and (max-width: 1000px) {
-	.font {
-		line-height: 28vh;
-		text-shadow: #C967E4 0 0 0.5em;
-		transform: translate(5%, 0%);
+@keyframes glow {
+	from {
+		text-shadow: #C967E4 0 0 0.1em, #C967E4 0 0 0.1em, #C967E4 0 0 0.2em, #C967E4 0 0 0.2em;
+	}
+	to {
+		text-shadow: yellow 0 0 0.1em, #C967E4 0 0 0.1em, #C967E4 0 0 0.2em, yellow 0 0 0.2em;
 	}
 }
 .button {
@@ -84,161 +79,92 @@ body {
   text-align: center;
   font-size: 3em;
   font-family: "Monaco";
-	/*font-stretch: ultra-condensed;*/
 	text-decoration: none;
 	position: absolute;
+	line-height: 1em;
 } 
 .button:hover {
 	text-decoration: underline;
 	text-decoration-thickness: 10%;
 	color: black;
 }
-/*.hovering:hover {
-	font-size: 32px;
-	font-family: "DIN-alternate";
-	background-color: white;
-	color: #0102E1;
-	position: absolute;
-	z-index: 900;
-}*/
 #orange_diamond {
 	position: absolute; 
-	left: 8%;
-	top: 55%
-	/*bottom: -13%;*/
-	/* transform: translate(220%, 15%); */
-	/*width: auto;
-	height: auto;*/
+	left: 60%;
+	top: 55%;
 }
 #red_diamond { 
 	position: absolute;
-	right: 56%;
+	/*transform: scale(1.5, 1.5);*/
+	/*right: 62%;*/
+	right: 50%;
 	top: 0%;
-	/*z-index: 1;*/
-	/* transform: translate(220%, 15%); */
-	/*background-size: cover;*/
-	/*height:auto;
-	width:auto;*/
 }
 #yellow_diamond { 
 	position: absolute;
-	right: 15%;
-	top: 64%;
-	/*z-index: 600;*/
-	/* transform: translate(220%, 15%); */
-	/*background-size: contain;*/
-	/*height: auto;
-	width:auto;*/
+	/*transform: scale(1.5, 1.5);*/
+	left: 50%;
+	top: 10%;
 }
 #purple_diamond { 
 	position: absolute;
-	left: 74%;
-	bottom: 0%;
-	z-index: 700;
-	/* transorm: translate(220%, 15%); */
-	/*width: auto;
-	height: auto;*/
+	/*transform: scale(1.5, 1.5);*/
+	right: 55%;
+	top: 85%;
+	z-index: 401;
 }
 #greenred_diamond { 
 	position: absolute;
-	left: 61%;
-	/*bottom: -20%;*/
-	/*right: 53%;*/
-	top: 9%;
-	/*z-index: 400;*/
-	/* transform: translate(220%, 15%); */
-	/*width: auto;
-	height: auto;*/
+	/*transform: scale(1.5, 1.5);*/
+	right: 60%;
+	/*left: 0%;*/
+	top: 70%;
 }
-#bluepink_diamond { 
+/*#bluepink_diamond { 
 	position: absolute;
 	left: 60%;
 	top: 30%;
-	/*height: auto;
-	z-index: 300;*/
-	/* transform: translate(220%, 15%); 
-		width: auto;*/
-}
+}*/
 
 </style>
 <body>
-
-<!--
-<div class="center-screen">
-  <img id= "orange_diamond" src="/assets/images/orange_diamond.png" alt="orange diamond">
-</div>
-
-<div class="center-screen">
-<img id= "red_diamond" src="/assets/images/red_diamond.png" alt="red diamond">
-</div>
-
-<div class="center-screen">
-<img id= "yellow_diamond" src="/assets/images/yellow_diamond.png" alt="yellow diamond">
-</div>
-
-<div class="center-screen">
-<img id= "purple_diamond" src="/assets/images/purple_diamond.png" alt="purple diamond">
-</div>
-
-<div class="center-screen">
-<img id= "greenred_diamond" src="/assets/images/greenred_diamond.png" alt="green & red diamond">
-</div>
-
-<div class="center-screen">
-<img id= "bluepink_diamond" src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond">
-</div>
-
-<div class="center-screen">
-   <p class="font"> BLUE<br>&nbsp;&nbsp;&nbsp;&nbsp;surgeon </p>
-</div>
--->
-
-<!--<div class="center-screen">
-	<img id= "red_diamond" src="/assets/images/red_diamond.png" alt="red diamond">
-	<img id= "orange_diamond" src="/assets/images/orange_diamond.png" alt="orange diamond">
-	<img id= "yellow_diamond" src="/assets/images/yellow_diamond.png" alt="yellow diamond">
-	<p class="font"> BLUE<br>&nbsp;&nbsp;&nbsp;&nbsp;surgeon </p>
-	<img id= "purple_diamond" src="/assets/images/purple_diamond.png" alt="purple diamond">
-	<img id= "greenred_diamond" src="/assets/images/greenred_diamond.png" alt="green & red diamond">
-	<img id= "bluepink_diamond" src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond">
-</div>*/-->
  
-<div class="center-screen2">
-	<div class="center-screen" id="orange_diamond">
-		<img src="/assets/images/orange_diamond.png" alt="orange diamond" style="	z-index: 1">
-		<a href="#" class="button" style="font-size: 4.2em">
-			archive
-		</a>
-	</div>
-	<div class="center-screen" id="red_diamond">
-		<img src="/assets/images/red_diamond.png" alt="red diamond" style="z-index: 800">
+<div class="parent">
+	<div class="diamondchild" id="red_diamond">
+		<img src="/assets/images/red_diamond.png" alt="red diamond" style="z-index: 350">
 		<a href="#" class="button" style="font-size: 4em">
 			latest<br>post
 		</a>
 	</div>
-	<div class="center-screen" id="yellow_diamond">
-		<img src="/assets/images/yellow_diamond.png" alt="yellow diamond" style="z-index: 600">
+	<div class="diamondchild" id="orange_diamond">
+		<img src="/assets/images/orange_diamond.png" alt="orange diamond" style="	z-index: 450">
+		<a href="#" class="button" style="font-size: 4.2em">
+			archive
+		</a>
+	</div>
+	<div class="diamondchild" id="yellow_diamond">
+		<img src="/assets/images/yellow_diamond.png" alt="yellow diamond" style="z-index: 451">
 		<a href="#" class="button">
 			subscribe
 		</a>
 	</div>
-	<div class="center-screen" id="purple_diamond">
+	<div class="diamondchild" id="purple_diamond">
 		<img src="/assets/images/purple_diamond.png" alt="purple diamond">
 			<a href="#" class="button">
 				contact
 			</a>
 	</div>
-	<div class="center-screen" id="greenred_diamond">
+	<div class="diamondchild" id="greenred_diamond">
 		<img src="/assets/images/greenred_diamond.png" alt="green & red diamond" style="z-index: 400">
 		<a href="#" class="button" style="font-size: 2.6em">
 			about
 		</a>
 	</div>
-	<div class="center-screen" id= "bluepink_diamond">
+	<!--<div class="diamondchild" id= "bluepink_diamond">
 		<img src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond" style="z-index: 300" title="slurps up">
-	</div>
-	<div class="center-screen" style="margin-top: 10%">
-		<p class="font"> <br>BLUE<br><!--&nbsp;&nbsp;&nbsp;&nbsp;-->surgeon </p>
+	</div>-->
+	<div class="textchild">
+		<p class="font">blue<br>surgeon</p>
 	</div>
 </div>
 
