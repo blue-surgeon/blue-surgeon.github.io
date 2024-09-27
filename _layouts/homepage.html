@@ -13,53 +13,50 @@ html {
 body {
 	background-color: #0102E1;
 	min-height: 100%;
-	/*width: 100%;*/
-	/*zoom: 53%;*/
 	font-size: 16px;
 	margin: 0;
-	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	position: relative;
 }
-.parent {
-  display: flex;
- flex-direction: row;
- margin-top: 50vh;
- /*margin-bottom: 50vh;*/
-  justify-content: center;
+.top-column {
+	flex: 1 0 35%;
+	display: flex;
+	justify-content: center;
   align-items: center;
 }
-@media screen and (orientation: portrait) {
- 	.diamondchild {
- 		flex-direction: column;
- 	}
- }
-.textchild {
+.middle-column {
+	flex: 0 1 content;
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   /*flex-direction: row;*/
-  /*min-height: 100%;*/
-  /*height: 100%;*/
  }
- .diamondchild {
+ .bottom-column {
+ 	flex: 1 0 35%;
   display: flex;
-  /*flex-direction: row;*/
   justify-content: center;
   align-items: center;
  }
- /*I@media screen and (max-width: 650px) {
- 	.diamondchild {
- 		transform: scale(1.5, 1.5);
- 	}
- }*/
+ .diamond {
+ 	display: flex;
+  justify-content: center;
+  align-items: center;
+ }
 .font {
-	/*font-size: 48vmin;*/
-	font-size: 15em;
+	font-size: 13vmax;
+	/*font-size: 11em;*/
 	font-family: "DIN alternate";
 	font-stretch: ultra-condensed;
-	color: white;
-	letter-spacing: -0.05em;
-	text-align: center;
+	color: blue;
+	letter-spacing: -0.04em;
+	text-align: end;
 	text-shadow: #C967E4 0 0 0.2em;
 	line-height: 0.55em;
+	margin: 0;
 	z-index: 500;
 	animation: glow 3s ease-in-out infinite alternate;
 }
@@ -77,7 +74,7 @@ body {
   padding: 10px 8px;
   border-radius: 10px; 
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   font-family: "Monaco";
 	text-decoration: none;
 	position: absolute;
@@ -88,85 +85,71 @@ body {
 	text-decoration-thickness: 10%;
 	color: black;
 }
-#orange_diamond {
-	position: absolute; 
-	left: 60%;
-	top: 55%;
-}
 #red_diamond { 
 	position: absolute;
-	/*transform: scale(1.5, 1.5);*/
-	/*right: 62%;*/
-	right: 50%;
-	top: 0%;
+	left: 15%;
+	margin-top: 20vh;
 }
 #yellow_diamond { 
 	position: absolute;
-	/*transform: scale(1.5, 1.5);*/
-	left: 50%;
-	top: 10%;
-}
-#purple_diamond { 
-	position: absolute;
-	/*transform: scale(1.5, 1.5);*/
-	right: 55%;
-	top: 85%;
-	z-index: 401;
+	right: 0%;
 }
 #greenred_diamond { 
 	position: absolute;
-	/*transform: scale(1.5, 1.5);*/
-	right: 60%;
-	/*left: 0%;*/
-	top: 70%;
+	left: 0%;
+	margin-bottom: 20vh;
+}
+#purple_diamond { 
+	position: absolute;
+  left:22%;
+	margin-top: 10vh;
+	z-index: 401;
+}
+#orange_diamond {
+	position: absolute; 
+	right: 0%;
 }
 /*#bluepink_diamond { 
 	position: absolute;
-	left: 60%;
-	top: 30%;
+	z-index: 450;
 }*/
 
 </style>
 <body>
  
-<div class="parent">
-	<div class="diamondchild" id="red_diamond">
+<div class="top-column">
+	<div class="diamond" id="red_diamond">
 		<img src="/assets/images/red_diamond.png" alt="red diamond" style="z-index: 350">
-		<a href="#" class="button" style="font-size: 4em">
-			latest<br>post
-		</a>
+		<a href="#" class="button" style="font-size: 2.5em">latest<br>post</a>
 	</div>
-	<div class="diamondchild" id="orange_diamond">
-		<img src="/assets/images/orange_diamond.png" alt="orange diamond" style="	z-index: 450">
-		<a href="#" class="button" style="font-size: 4.2em">
-			archive
-		</a>
-	</div>
-	<div class="diamondchild" id="yellow_diamond">
+	<div class="diamond" id="yellow_diamond">
 		<img src="/assets/images/yellow_diamond.png" alt="yellow diamond" style="z-index: 451">
-		<a href="#" class="button">
-			subscribe
-		</a>
-	</div>
-	<div class="diamondchild" id="purple_diamond">
-		<img src="/assets/images/purple_diamond.png" alt="purple diamond">
-			<a href="#" class="button">
-				contact
-			</a>
-	</div>
-	<div class="diamondchild" id="greenred_diamond">
-		<img src="/assets/images/greenred_diamond.png" alt="green & red diamond" style="z-index: 400">
-		<a href="#" class="button" style="font-size: 2.6em">
-			about
-		</a>
-	</div>
-	<!--<div class="diamondchild" id= "bluepink_diamond">
-		<img src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond" style="z-index: 300" title="slurps up">
-	</div>-->
-	<div class="textchild">
-		<p class="font">blue<br>surgeon</p>
+		<a href="#" class="button">subscribe</a>
 	</div>
 </div>
+
+<div class="middle-column">
+	<p class="font">BLUE surgeon</p>
+	<!--<div class="diamond" id= "bluepink_diamond">
+		<img src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond">
+	</div>-->
+</div>
+
+<div class="bottom-column">
+	<div class="diamond" id="greenred_diamond">
+		<img src="/assets/images/greenred_diamond.png" alt="green & red diamond" style="z-index: 400">
+		<a href="#" class="button" style="font-size: 2em">about</a>
+	</div>
+	<div class="diamond" id="purple_diamond">
+		<img src="/assets/images/purple_diamond.png" alt="purple diamond">
+			<a href="#" class="button">contact</a>
+	</div>
+		<div class="diamond" id="orange_diamond">
+		<img src="/assets/images/orange_diamond.png" alt="orange diamond" style="	z-index: 450">
+		<a href="#" class="button" style="font-size: 2.7em">archive</a>
+	</div>
+</div>
+
 
 </body>
 </html>
