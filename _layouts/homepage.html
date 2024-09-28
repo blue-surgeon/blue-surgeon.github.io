@@ -4,6 +4,9 @@
 <!DOCTYPE html> 
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Blue Surgeon">
+	<meta name="keywords" content="Blue Surgeon, music">
 <body>
 
 <style>
@@ -47,15 +50,12 @@ body {
   align-items: center;
  }
 .font {
-	font-size: 13vmax;
-	/*font-size: 11em;*/
-	font-family: "DIN alternate";
-	font-stretch: ultra-condensed;
+	font-size: ultra-condensed 13vmax/0.55em "DIN alternate", monospace;
+	/*font-size: 11em; font stretch, font size/line height, font-family*/
 	color: blue;
 	letter-spacing: -0.04em;
 	text-align: end;
 	text-shadow: #C967E4 0 0 0.2em;
-	line-height: 0.55em;
 	margin: 0;
 	z-index: 500;
 	animation: glow 3s ease-in-out infinite alternate;
@@ -69,13 +69,12 @@ body {
 	}
 }
 .button {
+	font: 2em "Monaco";
 	z-index: 999 !important;
   color: light gray;
   padding: 10px 8px;
   border-radius: 10px; 
   text-align: center;
-  font-size: 2em;
-  font-family: "Monaco";
 	text-decoration: none;
 	position: absolute;
 	line-height: 1em;

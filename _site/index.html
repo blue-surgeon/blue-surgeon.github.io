@@ -1,159 +1,138 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<body>
-
 <style>
-html {
-	height: 100%;
-}
 body {
-	background-color: blue;
-	min-height: 100%;
-	font-size: 16px;
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: stretch;
-	position: relative;
+    min-height: 100%;
+    padding-top: 4vh;
+    padding-bottom: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background: url(/assets/images/tile1_pretty.png) top center repeat pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* add background image and features*/
 }
-.top-column {
-	flex: 1 0 35%;
-	display: flex;
-	justify-content: center;
-  align-items: center;
+h1 {
+    font: ultra-condensed 12em/0.55em "Lucida Handwriting", cursive;
+    /*font-size: 11em; font stretch, font size/line height, font-family*/
+    color: black;
+    letter-spacing: -0.1em;
+    text-align: center;
+    position: sticky;
+    text-shadow: yellow 0 0 0.1em, yellow 0 0 0.1em, white 0 0 0.2em, yellow 0 0 0.2em;
+    z-index: 100;
+    top: 3vh;
+    margin: 0;
+/*
+    text-shadow: #C967E4 0 0 0.2em;
+    animation: glow 3s ease-in-out infinite alternate;*/
 }
-.middle-column {
-	flex: 0 1 content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  /*flex-direction: row;*/
- }
- .bottom-column {
- 	flex: 1 0 35%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
- .diamond {
- 	display: flex;
-  justify-content: center;
-  align-items: center;
- }
-.font {
-	font-size: 13vmax;
-	/*font-size: 11em;*/
-	font-family: "DIN alternate";
-	font-stretch: ultra-condensed;
-	color: white;
-	letter-spacing: -0.04em;
-	text-align: end;
-	text-shadow: #C967E4 0 0 0.2em;
-	line-height: 0.55em;
-	margin: 0;
-	z-index: 500;
-	animation: glow 3s ease-in-out infinite alternate;
+.bulk {
+    display: flex;
+    flex: 0 1 auto;
+    max-width:70vw;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(255,255,255,0.7);
+    gap: 1%;
+    /*align-content: space around;*/
+    z-index: 50;
+    /*border-radius: 5em;*/
 }
-@keyframes glow {
-	from {
-		text-shadow: #C967E4 0 0 0.1em, #C967E4 0 0 0.1em, #C967E4 0 0 0.2em, #C967E4 0 0 0.2em;
-	}
-	to {
-		text-shadow: yellow 0 0 0.1em, #C967E4 0 0 0.1em, #C967E4 0 0 0.2em, yellow 0 0 0.2em;
-	}
+.bulktext {
+    padding: 5%;
+    margin: 0%;
+    font: 1.5em "Georgia", serif;
+    /*background-size: 30px;*/
 }
-.button {
-	z-index: 999 !important;
-  color: light gray;
-  padding: 10px 8px;
-  border-radius: 10px; 
-  text-align: center;
-  font-size: 2em;
-  font-family: "Monaco";
-	text-decoration: none;
-	position: absolute;
-	line-height: 1em;
-} 
-.button:hover {
-	text-decoration: underline;
-	text-decoration-thickness: 10%;
-	color: black;
+#bulkytext {
+    background: rgba(255,255,255,0.8);
 }
-#red_diamond { 
-	position: absolute;
-	left: 15%;
-	margin-top: 20vh;
+.bottombox{
+    display: flex;
+    flex: 0 1 90%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 2%;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
 }
-#yellow_diamond { 
-	position: absolute;
-	right: 0%;
+.bottomlinks {
+    display: flex;
+    flex: 0 1 auto;
+    padding: 2%;
+    margin-bottom: 2%;
+    background: rgba(255,255,255,0.6);
+    z-index: 150;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    /*border: solid white;*/
+    font: 3vmin "Monaco";
+   /*letter-spacing: +0.05em;*/
+    color: darkblue;
 }
-#greenred_diamond { 
-	position: absolute;
-	left: 0%;
-	margin-bottom: 20vh;
+.bottomlinks:hover {
+    box-shadow: darkblue 0 0 1em, black 0 0 0.5em;
+    text-decoration: underline;
+    text-decoration-thickness: 10%;
+    color: black;
 }
-#purple_diamond { 
-	position: absolute;
-  left:22%;
-	margin-top: 10vh;
-	z-index: 401;
+.bottomlinksfont {
+    margin: 0;
 }
-#orange_diamond {
-	position: absolute; 
-	right: 0%;
+footer {
+    z-index: 100;
+    left: 0%;
+    bottom: 2vh;
+    width: 100%;
+    position: fixed;
 }
-#backdrop {
-	position: absolute;
-	z-index: 0;
+#footerfont {
+    font: ultra-condensed 4em "Lucida Handwriting", cursive;
+    /*font-size: 11em; font stretch, font size/line height, font-family*/
+    color: black;
+    text-align: center;
+    text-shadow: yellow 0 0 0.1em, white 0 0 0.1em;
+    margin: 0;
+    text-decoration: none;
+    line-height: 1em;
 }
-/*#bluepink_diamond { 
-	position: absolute;
-	z-index: 450;
-}*/
-
 </style>
 <body>
- 
-<div class="top-column">
-	<div class="diamond" id="red_diamond">
-		<img src="/assets/images/red_diamond.png" alt="red diamond" style="z-index: 350">
-		<a href="#" class="button" style="font-size: 2.5em">latest<br>post</a>
-	</div>
-	<div class="diamond" id="yellow_diamond">
-		<img src="/assets/images/yellow_diamond.png" alt="yellow diamond" style="z-index: 451">
-		<a href="#" class="button">subscribe</a>
-	</div>
-</div>
-
-<div class="middle-column">
-	<p class="font">BLUE surgeon</p>
-	<img id="backdrop" src="/assets/images/backdrop.png" alt="optional backdrop">
-	<!--<div class="diamond" id= "bluepink_diamond">
-		<img src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond">
-	</div>-->
-</div>
-
-<div class="bottom-column">
-	<div class="diamond" id="greenred_diamond">
-		<img src="/assets/images/greenred_diamond.png" alt="green & red diamond" style="z-index: 400">
-		<a href="#" class="button" style="font-size: 2em">about</a>
-	</div>
-	<div class="diamond" id="purple_diamond">
-		<img src="/assets/images/purple_diamond.png" alt="purple diamond">
-			<a href="#" class="button">contact</a>
-	</div>
-		<div class="diamond" id="orange_diamond">
-		<img src="/assets/images/orange_diamond.png" alt="orange diamond" style="	z-index: 450">
-		<a href="#" class="button" style="font-size: 2.7em">archive</a>
-	</div>
-</div>
-
-
+    <h1> title </h1>
+    <div class="bulk">
+       <p class="bulktext">   <span id="bulkytext">Hello, my anme is Reahsm./ fjkfdslfjio jekifj dfjewikfuierojnfmk fjdksdlmkldsk jfkej fjkdjfinm kfdjkjwije jfkdjfkdmkfjiojjm. Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br></span></p>
+    <div class="bottombox">
+         <div class="bottomlinks">
+            <p class="bottomlinksfont">-about-</p>
+        </div>
+        <div class="bottomlinks">
+            <p class="bottomlinksfont">-subscribe-</p>
+        </div>
+        <div class="bottomlinks">
+            <p class="bottomlinksfont">-contact-</p>
+        </div>
+        <div class="bottomlinks">
+            <p class="bottomlinksfont">-archive-</p>
+        </div>
+        <div class="bottomlinks">
+            <p class="bottomlinksfont">-home-</p>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p id="footerfont">page dated 11/2/2024</p>
+    </footer>
 </body>
 </html>
-
-
