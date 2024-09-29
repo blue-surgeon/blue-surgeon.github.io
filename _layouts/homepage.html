@@ -1,113 +1,139 @@
----
 
----
 <!DOCTYPE html> 
 <html>
 <head>
+
 	<meta charset="UTF-8">
 	<meta name="author" content="Blue Surgeon">
 	<meta name="keywords" content="Blue Surgeon, music">
+</head>
 <body>
 
 <style>
-html {
-	height: 100%;
-}
+
+html { height: 100%; }
+
 body {
-	background-color: blue;
-	min-height: 100%;
-	font-size: 16px;
 	margin: 0;
+	min-height: 100%;
+
+	background-color: blue;
+	font-size: 16px;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: stretch;
-	position: relative;
-}
-.top-column {
+
+	position: relative; 
+	} 
+
+.top-column { /*red and yellow diamonds*/
 	flex: 1 0 35%;
 	display: flex;
 	justify-content: center;
   align-items: center;
-}
-.middle-column {
+	}
+
+.middle-column { /*title*/
 	flex: 0 1 content;
   display: flex;
   justify-content: center;
   align-items: center;
+
   position: relative;
-  /*flex-direction: row;*/
- }
- .bottom-column {
+	 }
+
+ .bottom-column { /*green puirple yellow diamonds, same as top-column, kept separate just in case*/
  	flex: 1 0 35%;
   display: flex;
   justify-content: center;
   align-items: center;
- }
- .diamond {
+	 }
+
+ .diamond { /*centering the links over top the diamonds*/
  	display: flex;
   justify-content: center;
   align-items: center;
- }
-.font {
-	font-size: ultra-condensed 13vmax/0.55em "DIN alternate", monospace;
-	/*font-size: 11em; font stretch, font size/line height, font-family*/
-	color: blue;
-	letter-spacing: -0.04em;
-	text-align: end;
-	text-shadow: #C967E4 0 0 0.2em;
+ 	}
+
+.font { /*title*/
 	margin: 0;
 	z-index: 500;
+	text-align: end;
+
+	font: ultra-condensed 13vmax/0.55em "DIN alternate", monospace; /*font-size: 11em; font stretch, font size/line height, font-family*/
+	color: blue;
+	letter-spacing: -0.04em;
+	text-shadow: #C967E4 0 0 0.2em;
+
 	animation: glow 3s ease-in-out infinite alternate;
-}
-@keyframes glow {
-	from {
-		text-shadow: #C967E4 0 0 0.1em, #C967E4 0 0 0.1em, #C967E4 0 0 0.2em, #C967E4 0 0 0.2em;
 	}
-	to {
-		text-shadow: white 0 0 0.1em, #C967E4 0 0 0.1em, #C967E4 0 0 0.2em, white 0 0 0.2em;
+
+@keyframes glow { /*glowing animation around title*/
+	from { text-shadow: 
+		#C967E4 0 0 0.1em, #C967E4 0 0 0.1em, #C967E4 0 0 0.2em, #C967E4 0 0 0.2em; }
+	to { text-shadow: 
+		white 0 0 0.1em, #C967E4 0 0 0.1em, #C967E4 0 0 0.2em, white 0 0 0.2em; }
 	}
-}
-.button {
-	font: 2em "Monaco";
+
+.diamondlinks { /*links on the diamonds*/
+	padding: 10px 8px;
 	z-index: 999 !important;
+	text-align: center;
+
+	font: 2em "Monaco";
   color: light gray;
-  padding: 10px 8px;
   border-radius: 10px; 
-  text-align: center;
 	text-decoration: none;
-	position: absolute;
 	line-height: 1em;
-} 
-.button:hover {
+
+	position: absolute;
+	} 
+
+.diamondlinks:hover { /*links upon hover*/
 	text-decoration: underline;
 	text-decoration-thickness: 10%;
 	color: black;
-}
+	}
+
 #red_diamond { 
-	position: absolute;
-	left: 15%;
 	margin-top: 20vh;
-}
+
+	left: 15%;
+
+	position: absolute;
+	}
+
 #yellow_diamond { 
-	position: absolute;
 	right: 0%;
-}
+
+	position: absolute;
+	}
+
 #greenred_diamond { 
-	position: absolute;
-	left: 0%;
 	margin-bottom: 20vh;
-}
-#purple_diamond { 
+
+	left: 0%;
+
 	position: absolute;
-  left:22%;
+	}
+
+#purple_diamond { 
 	margin-top: 10vh;
 	z-index: 401;
-}
+
+	 left:22%;
+
+	position: absolute;
+	}
+
 #orange_diamond {
-	position: absolute; 
 	right: 0%;
-}
+
+	position: absolute; 
+	}
+
 /*#backdrop {
 	position: absolute;
 	z-index: 0;
@@ -117,17 +143,19 @@ body {
 	z-index: 450;
 }*/
 
+/*clean up z-index situation and font sized in the diamonds*/
+
 </style>
 <body>
  
 <div class="top-column">
 	<div class="diamond" id="red_diamond">
 		<img src="/assets/images/red_diamond.png" alt="red diamond" style="z-index: 350">
-		<a href="#" class="button" style="font-size: 2.5em">latest<br>post</a>
+		<a href="/post/" class="diamondlinks" style="font-size: 2.5em">latest<br>post</a>
 	</div>
 	<div class="diamond" id="yellow_diamond">
 		<img src="/assets/images/yellow_diamond.png" alt="yellow diamond" style="z-index: 451">
-		<a href="#" class="button">subscribe</a>
+		<a href="#" class="diamondlinks">subscribe</a>
 	</div>
 </div>
 
@@ -142,15 +170,15 @@ body {
 <div class="bottom-column">
 	<div class="diamond" id="greenred_diamond">
 		<img src="/assets/images/greenred_diamond.png" alt="green & red diamond" style="z-index: 400">
-		<a href="#" class="button" style="font-size: 2em">about</a>
+		<a href="/about/" class="diamondlinks" style="font-size: 2em">about</a>
 	</div>
 	<div class="diamond" id="purple_diamond">
 		<img src="/assets/images/purple_diamond.png" alt="purple diamond">
-			<a href="#" class="button">contact</a>
+			<a href="#" class="diamondlinks">contact</a>
 	</div>
 		<div class="diamond" id="orange_diamond">
 		<img src="/assets/images/orange_diamond.png" alt="orange diamond" style="	z-index: 450">
-		<a href="#" class="button" style="font-size: 2.7em">archive</a>
+		<a href="#" class="diamondlinks" style="font-size: 2.7em">archive</a>
 	</div>
 </div>
 

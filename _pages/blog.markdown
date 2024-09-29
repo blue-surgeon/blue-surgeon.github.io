@@ -1,7 +1,7 @@
-blog.md
+
 
 ---
-layout: default
+layout: post
 title: Blog
 permalink: /blog
 ---
