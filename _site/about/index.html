@@ -1,154 +1,75 @@
 <!DOCTYPE html>
 
-<html lang="en">
-
-<head>
-
-<style>
-
+<html>
+<head></head>
+<style type="text/css">
+	
 body {
-    min-height: 100%;
-    padding: 4vh 10% 8% 10%; /*padding top right bottom left*/
-    background: url(/assets/images/tile1_pretty.png) top center repeat pink;
+	min-height: 100%;
+	margin: 10%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center; 
-    }
+	background: url(/assets/images/contactart.png) 50% 0% repeat, url(/assets/images/contactart.png) 0% 90% repeat #9F9AF2;
+	background-size: 50%, 50%;
+	background-origin: content-box;
+	font: 62.5%;
 
-h1 { /*title*/
-    top: 3vh;
-    margin: 0; 
-    z-index: 100;
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+	align-items: center;
+	justify-content: center;
+}
 
-    font: ultra-condensed 12em/0.55em "URW Chancery L", cursive; /*font stretch, font size/line height, font-family*/
-    color: black;
-    letter-spacing: -0.1em;
-    text-align: center;
-    text-shadow: yellow 0 0 0.1em, yellow 0 0 0.1em, white 0 0 0.2em, yellow 0 0 0.2em;
+.bulk1 {
+	margin: 5%;
+	padding: 5%;
+	width: 90%;
 
-    position: sticky; 
-    }
+	background-color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	flex: 1 0 20vh;
 
-.bulk { /*bulk of page, contents of post*/
-    max-width:70vw;
-    background: rgba(255,255,255,0.7);
-    z-index: 50;
+}
 
-    display: flex;
-    flex: 0 1 auto;
-    flex-direction: row;
-    justify-content: center;
-    align-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1%; 
-    }
+.bulktext {
+	margin:0;
 
-.bulktext { /*text in post*/
-    padding: 5%;
-    margin: 0%;
+	font: 6em "Georgia", serif;
+	text-align: center;
+}
+.titlebox {
+	margin:0;
+	padding:0;
 
-    font: 2em "Georgia", serif; 
-    }
+	background: linear-gradient(180deg, white 0%, #9F9AF2 50%, white 100%);
+	background-clip: text;
 
-#bulkytext { background: rgba(255,255,255,0.8); } /*backdrop behind text*/
+	display: flex;
+	flex: 0 1 auto;
+}
+ #title {
+ 	margin: 0;
+ 	height: 0.77em;
 
-.bottombox { /*for fomatting the boxes of links at the bottom of the page*/
-    padding: 0 5% 5% 5%;
+	font: 16em "Monaco";
+	letter-spacing: -0.06em;
+	color: transparent;
+	-webkit-text-stroke: 3px black;
+	line-height: 0.74em;
+ }
 
-    display: flex;
-    flex: 0 1 90%;
-    justify-content: center;
-    align-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2%; 
-    }
-
-.bottomlinks { /*formatting the boxes and font*/
-    padding: 2%;
-    margin-bottom: 2%;
-    z-index: 150;
-
-    background: rgba(255,255,255,0.6);
-    font: 3vmin "Monaco";
-    color: darkblue;
-    border-radius: 5px;
-
-    display: flex;
-    flex: 0 1 auto;
-    justify-content: center;
-    align-items: center; 
-    }
-
-.bottomlinks:hover {
-    box-shadow: darkblue 0 0 1em, black 0 0 0.5em;
-    text-decoration: underline;
-    text-decoration-thickness: 10%;
-    color: black; 
-    }
-
-.bottomlinksfont { margin: 0; } /*needed to be separate, not sure why*/
-
-footer { /*bottom title, date written*/
-    left: 0%;
-    bottom: 2vh;
-    width: 100%;
-    z-index: 100;
-
-    position: fixed; 
-    }
-
-#footerfont { /*font in bottom title, similar to title*/
-    margin: 0;
-
-    font: ultra-condensed 4em "URW Chancery L", cursive;
-    color: black;
-    text-align: center;
-    text-shadow: yellow 0 0 0.1em, white 0 0 0.1em, yellow 0 0 0.1em;
-    text-decoration: none;
-    line-height: 1em; 
-    }
 
 </style>
-
 <body>
-    <h1> title </h1>
-
-    <div class="bulk">
-
-       <p class="bulktext">   
-            <span id="bulkytext">Hello, my anme is Reahsm./ fjkfdslfjio jekifj dfjewikfuierojnfmk fjdksdlmkldsk jfkej fjkdjfinm kfdjkjwije jfkdjfkdmkfjiojjm. Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>Regenerating<br>
-            </span>
-        </p>
-
-        <div class="bottombox">
-            <div class="bottomlinks">
-                <p class="bottomlinksfont">-about-</p>
-            </div>
-            <div class="bottomlinks">
-                <p class="bottomlinksfont">-subscribe-</p>
-            </div>
-            <div class="bottomlinks">
-                <p class="bottomlinksfont">-contact-</p>
-            </div>
-            <div class="bottomlinks">
-                <p class="bottomlinksfont">-archive-</p>
-            </div>
-            <div class="bottomlinks">
-                <p class="bottomlinksfont">-home-</p>
-            </div>
-        </div>
-
-    </div>
-
-    <footer>
-        <p id="footerfont">post written 11/2/2024</p>
-    </footer>
-
+	
+	<div class="bulk1" style="margin-bottom: 0">
+		<p class="bulktext"> Here's my one social:  <br> aaaaa </p>
+	</div>
+	<div class="titlebox">
+		<p id="title"> contact </p>
+	</div>
+	<div class="bulk1" style="margin-top: 0">
+		<p class="bulktext"> Email me! <br> aaaaa </p>
+	</div>
 </body>
-
 </html>
