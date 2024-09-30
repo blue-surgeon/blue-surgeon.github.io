@@ -17,8 +17,8 @@ body {
 	margin: 0;
 	min-height: 100%;
 
-	background-color: blue;
-	font-size: 16px;
+	background: url(/assets/images/homepageart.png) top right no-repeat, url(/assets/images/homepageartflip.png) left bottom no-repeat blue;
+	font-size: 62.5%;
 
 	display: flex;
 	flex-direction: column;
@@ -44,7 +44,7 @@ body {
   position: relative;
 	 }
 
- .bottom-column { /*green puirple yellow diamonds, same as top-column, kept separate just in case*/
+ .bottom-column { /*pink and white diamonds, same as top-column, kept separate just in case*/
  	flex: 1 0 35%;
   display: flex;
   justify-content: center;
@@ -62,12 +62,14 @@ body {
 	z-index: 500;
 	text-align: end;
 
-	font: ultra-condensed 13vmax/0.55em "DIN alternate", monospace; /*font-size: 11em; font stretch, font size/line height, font-family*/
-	color: blue;
-	letter-spacing: -0.04em;
-	text-shadow: #C967E4 0 0 0.2em;
+	font: 12vmax/0.8em "Monaco", monospace; /*font-size: 11em; font stretch, font size/line height, font-family*/
+	color: white;
+	letter-spacing: -0.07em;
+	font-weight: 700;
+	text-shadow: blue 0 0 0.2em, blue 0 0 0.1em;
+	/*-webkit-text-stroke: 3px white;*/
 
-	animation: glow 3s ease-in-out infinite alternate;
+	/*animation: glow 3s ease-in-out infinite alternate;*/
 	}
 
 @keyframes glow { /*glowing animation around title*/
@@ -82,11 +84,11 @@ body {
 	z-index: 999 !important;
 	text-align: center;
 
-	font: 2em "Monaco";
-  color: light gray;
+	font: 4em "Georgia";
+  color: blue;
   border-radius: 10px; 
 	text-decoration: none;
-	line-height: 1em;
+	line-height: 1.2em;
 
 	position: absolute;
 	} 
@@ -102,24 +104,30 @@ body {
 
 	left: 15%;
 
+	font-size: 1.6em;
+
 	position: absolute;
 	}
 
 #yellow_diamond { 
 	right: 0%;
 
+	font-size: 1.4em;
+
 	position: absolute;
 	}
 
-#greenred_diamond { 
+#pink_diamond { 
 	margin-bottom: 20vh;
 
 	left: 0%;
 
+	font-size: 1.5em;
+
 	position: absolute;
 	}
 
-#purple_diamond { 
+#smallpink_diamond { 
 	margin-top: 10vh;
 	z-index: 401;
 
@@ -128,8 +136,10 @@ body {
 	position: absolute;
 	}
 
-#orange_diamond {
+#white_diamond {
 	right: 0%;
+
+	font-size: 1.75em;
 
 	position: absolute; 
 	}
@@ -151,16 +161,16 @@ body {
 <div class="top-column">
 	<div class="diamond" id="red_diamond">
 		<img src="/assets/images/red_diamond.png" alt="red diamond" style="z-index: 350">
-		<a href="/post/" class="diamondlinks" style="font-size: 2.5em">latest<br>post</a>
+		<a href="/post/" class="diamondlinks">latest<br>post</a>
 	</div>
 	<div class="diamond" id="yellow_diamond">
 		<img src="/assets/images/yellow_diamond.png" alt="yellow diamond" style="z-index: 451">
-		<a href="#" class="diamondlinks">subscribe</a>
+		<a href="#" class="diamondlinks">contact</a>
 	</div>
 </div>
 
 <div class="middle-column">
-	<p class="font">BLUE surgeon</p>
+	<p class="font">blue surgeon</p>
 	<!--<img id="backdrop" src="/assets/images/backdrop.png" alt="optional backdrop">-->
 	<!--<div class="diamond" id= "bluepink_diamond">
 		<img src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond">
@@ -168,17 +178,17 @@ body {
 </div>
 
 <div class="bottom-column">
-	<div class="diamond" id="greenred_diamond">
-		<img src="/assets/images/greenred_diamond.png" alt="green & red diamond" style="z-index: 400">
-		<a href="/about/" class="diamondlinks" style="font-size: 2em">about</a>
+	<div class="diamond" id="pink_diamond">
+		<img src="/assets/images/pink_diamond.png" alt="pink diamond" style="z-index: 400">
+		<a href="/about/" class="diamondlinks">about</a>
 	</div>
-	<div class="diamond" id="purple_diamond">
-		<img src="/assets/images/purple_diamond.png" alt="purple diamond">
-			<a href="#" class="diamondlinks">contact</a>
+	<div class="diamond" id="smallpink_diamond">
+		<img src="/assets/images/smallpink_diamond.png" alt="smallpink diamond">
+			<a href="/contact/" class="diamondlinks"><!--subscribe--></a>
 	</div>
-		<div class="diamond" id="orange_diamond">
-		<img src="/assets/images/orange_diamond.png" alt="orange diamond" style="	z-index: 450">
-		<a href="#" class="diamondlinks" style="font-size: 2.7em">archive</a>
+		<div class="diamond" id="white_diamond">
+		<img src="/assets/images/white_diamond.png" alt="white diamond" style="	z-index: 450">
+		<a href="#" class="diamondlinks"><!--archive--></a>
 	</div>
 </div>
 
