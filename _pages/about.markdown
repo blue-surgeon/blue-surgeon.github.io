@@ -1,10 +1,9 @@
 ---
 layout: about
-title: About
+title: about
 permalink: /about/
 ---
 
+**hello**
 
-About Page
-
-This page tells you a little bit about me.
+hello

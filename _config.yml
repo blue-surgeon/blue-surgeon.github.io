@@ -38,6 +38,8 @@ sass:
 # Build settings
 theme: null
 markdown: kramdown
+#kramdown:  
+  #parse_block_html: true
 plugins:
   - jekyll-feed
 

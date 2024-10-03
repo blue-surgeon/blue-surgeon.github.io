@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Blog
-permalink: /blog
+title: qoqoqoqoq
+permalink: /post/
 ---
+This is bold text
 
-## My Blog Posts
+Today I walked to the mall. It was strange. I didn't like it too much to be honest. I don't know. Livin la vida loca.
 
-<ul>
-  {% for post in site.posts %}
-  <li><a href="{{ post.url }}" class="post-preview">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+__This is bold text__
+
+*This is italic text*
+
+_This is italic text_
+
+~~Strikethrough~~

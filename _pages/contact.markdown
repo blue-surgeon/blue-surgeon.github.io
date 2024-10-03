@@ -8,6 +8,3 @@ permalink: /contact/
 
 Get in touch!
 
-<form>
-  <!-- Form stuff -->
-</form>

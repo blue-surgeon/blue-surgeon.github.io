@@ -53,13 +53,13 @@ body {
 }
  #title {
  	margin: 0;
- 	height: 0.77em;
+ 	height: 0.8em;
 
 	font: 16em "Monaco";
 	letter-spacing: -0.06em;
 	color: transparent;
 	-webkit-text-stroke: 3px black;
-	line-height: 0.74em;
+	line-height: 0.8em;
  }
 
 
@@ -70,10 +70,10 @@ body {
 		<p class="bulktext"> Here's my one social:  <br> aaaaa </p>
 	</div>
 	<div class="titlebox">
-		<p id="title"> contact </p>
+		<p id="title">{{ page.title }}</p>
 	</div>
 	<div class="bulk1" style="margin-top: 0">
-		<p class="bulktext"> Email me! <br> aaaaa </p>
+		<span class="bulktext">{{ content }}</span>
 	</div>
 </body>
 </html>
