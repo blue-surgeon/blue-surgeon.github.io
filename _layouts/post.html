@@ -6,6 +6,8 @@
 <html lang="en">
 
 <head>
+    <link href='https://ufonts.com/fonts/urw-chancery-l-medium-italic.html' title='URW Chancery L Regular Font Download - ufonts.com'></link>
+</head>
 
 <style>
 
@@ -13,7 +15,7 @@ body {
     min-height: 100%;
     padding: 4vh 10% 8% 10%; /*padding top right bottom left*/
     background: url(/assets/images/tile1_pretty.png) top center repeat pink;
-
+    background-size: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +39,7 @@ h1 { /*title*/
 
 .bulk { /*bulk of page, contents of post*/
     max-width:70vw;
-    background: rgba(255,255,255,0.7);
+    /*background: rgba(255,255,255,0.7);*/
     z-index: 50;
 
     display: flex;
@@ -51,20 +53,22 @@ h1 { /*title*/
     }
 
 .bulktext { /*text in post*/
-    padding: 5%;
+    padding: 4vmax 5% 5% 5%;
     margin: 0%;
 
      font: 2em "Georgia", serif; 
+      text-shadow: white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em;
+     background: rgba(255,255,255,0.7);
 
     display: inline-flex;
     }
 
-#bulkytext { /*backdrop behind text*/
-    background: rgba(255,255,255,0.8); 
-    }
+/*#bulkytext { /*backdrop behind text*/
+   /* background: rgba(255,255,255,0.8); 
+    }*/
 
 .bottombox { /*for fomatting the boxes of links at the bottom of the page*/
-    padding: 0 5% 5% 5%;
+    padding: 3% 5% 5% 5%;
 
     display: flex;
     flex: 0 1 90%;
@@ -80,8 +84,8 @@ h1 { /*title*/
     margin-bottom: 2%;
     z-index: 150;
 
-    background: rgba(255,255,255,0.6);
-    font: 3vmin "Monaco";
+    background: rgba(255,255,255,0.7);
+    font: 3vmin "DM mono", monospace;
     color: darkblue;
     border-radius: 5px;
 
@@ -93,6 +97,7 @@ h1 { /*title*/
 
 .bottomlinks:hover {
     box-shadow: darkblue 0 0 1em, black 0 0 0.5em;
+     background: rgba(255,255,255,0.9);
     text-decoration: underline;
     text-decoration-thickness: 10%;
     color: black; 
@@ -115,7 +120,7 @@ footer { /*bottom title, date written*/
     font: ultra-condensed 4em "URW Chancery L", cursive;
     color: black;
     text-align: center;
-    text-shadow: yellow 0 0 0.1em, white 0 0 0.1em, yellow 0 0 0.1em;
+    text-shadow: yellow 0 0 0.2em, white 0 0 0.2em, yellow 0 0 0.3em, yellow 0 0 0.1em;
     text-decoration: none;
     line-height: 1em; 
     }
@@ -128,7 +133,7 @@ footer { /*bottom title, date written*/
     <div class="bulk">
 
        <span class="bulktext">   
-            <span id="bulkytext">{{ content }}</span>
+            <span>{{ content }}</span>
         </span>
 
         <div class="bottombox">
