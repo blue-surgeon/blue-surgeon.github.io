@@ -85,8 +85,6 @@ h1 { /*title*/
     z-index: 150;
 
     background: rgba(255,255,255,0.7);
-    font: 3vmin "DM mono", monospace;
-    color: darkblue;
     border-radius: 5px;
 
     display: flex;
@@ -103,7 +101,18 @@ h1 { /*title*/
     color: black; 
     }
 
-.bottomlinksfont { margin: 0; } /*needed to be separate, not sure why*/
+.bottomlinksfont { 
+    margin: 0; 
+
+    font: 3vmin "DM mono", monospace;
+    color: darkblue;
+    } /*needed to be separate, not sure why*/
+
+.bottomlinksfont:hover {
+     text-decoration: underline;
+    text-decoration-thickness: 10%;
+    color: black; 
+    }
 
 footer { /*bottom title, date written*/
     left: 0%;
@@ -138,19 +147,19 @@ footer { /*bottom title, date written*/
 
         <div class="bottombox">
             <button class="bottomlinks">
-                <p class="bottomlinksfont">about</p>
+                <a href="/about/" class="bottomlinksfont">about</a>
             </button>
+            <!--<button class="bottomlinks">
+                <a class="bottomlinksfont">subscribe</a>
+            </button>-->
             <button class="bottomlinks">
-                <p class="bottomlinksfont">subscribe</p>
+                <a href="/contact/" class="bottomlinksfont">contact</a>
             </button>
+            <!--<button class="bottomlinks">
+                <a href="/archive/" class="bottomlinksfont">archive</a>
+            </button>-->
             <button class="bottomlinks">
-                <p class="bottomlinksfont">contact</p>
-            </button>
-            <button class="bottomlinks">
-                <p class="bottomlinksfont">archive</p>
-            </button>
-            <button class="bottomlinks">
-                <p class="bottomlinksfont">home</p>
+                <a href="/"class="bottomlinksfont">home</a>
             </button>
         </div>
 
