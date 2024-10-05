@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 
 <html>
-<head></head>
+<head>
+	
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"></link>
+
+</head>
 <style type="text/css">
 	
 body {
@@ -11,7 +15,7 @@ body {
 	background: url(/assets/images/contactart.png) 50% 0% repeat, url(/assets/images/contactart.png) 0% 90% repeat #9F9AF2;
 	background-size: 50%, 50%;
 	background-origin: content-box;
-	font: 62.5%;
+	font: 10px;
 
 	display: flex;
 	flex-direction: column;
@@ -34,28 +38,31 @@ body {
 .bulktext {
 	margin:0;
 
-	font: 6em "Georgia", serif;
+	font: 4em "Georgia", serif;
 	text-align: center;
+	text-shadow: white 0 0 0.3em, white 0 0 0.3em,white 0 0 0.3em, white 0 0 0.3em;
 }
 .titlebox {
 	margin:0;
 	padding:0;
+	width: 100vw;
 
-	background: linear-gradient(180deg, white 0%, #9F9AF2 50%, white 100%);
+	background: linear-gradient(180deg, white 5%, #9F9AF2 50%, white 95%);
 	background-clip: text;
 
 	display: flex;
 	flex: 0 1 auto;
+	justify-content: center;
 }
  #title {
  	margin: 0;
  	height: 0.8em;
 
-	font: 16em "DM Mono";
-	letter-spacing: -0.06em;
+	font: bold 16em/0.85em "DM Mono", monospace;
+	/*font-weight: 500;*/
+	letter-spacing: -0.1em;
 	color: transparent;
 	-webkit-text-stroke: 3px black;
-	line-height: 0.8em;
  }
 
 

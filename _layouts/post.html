@@ -6,7 +6,11 @@
 <html lang="en">
 
 <head>
+        <meta charset="UTF-8">
+    <meta name="author" content="Blue Surgeon">
+    <meta name="keywords" content="Blue Surgeon, music">
     <link href='https://ufonts.com/fonts/urw-chancery-l-medium-italic.html' title='URW Chancery L Regular Font Download - ufonts.com'></link>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"></link>
 </head>
 
 <style>
@@ -14,8 +18,8 @@
 body {
     min-height: 100%;
     padding: 4vh 10% 8% 10%; /*padding top right bottom left*/
-    background: url(/assets/images/tile1_pretty.png) top center repeat pink;
-    background-size: 70%;
+    background: {{ page.my_image }} top center repeat {{ page.my_color }};
+    background-size: {{ page.my_size }};
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,7 +170,7 @@ footer { /*bottom title, date written*/
     </div>
 
     <footer>
-        <p id="footerfont">post written 11/2/2024</p>
+        <p id="footerfont">post written {{ page.date_written }}</p>
     </footer>
 
 </body>
