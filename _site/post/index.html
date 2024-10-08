@@ -14,42 +14,24 @@
 
 <style>
 
-body {
-    padding: 4vh 10% 8% 10%; /*padding top right bottom left*/
-
+.postbody.special {
     background: url(/assets/images/tile1_goth.png) top center repeat purple;
     background-size: 70%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
     }
 
-/*name of post*/
-.postname { 
-    margin: 0; 
-    top: 5%;
-    z-index: 100;
-
-    position: sticky; 
-
-    font: ultra-condensed 12em/0.55em "mycursive", cursive;
-    letter-spacing: -0.06em;
-    text-shadow: #FFC600 0 0 0.1em, #FFC600 0 0 0.1em, white 0 0 0.2em, #FFC600 0 0 0.2em;
+.postname.special {
+    text-shadow: #FFC600 0 0 0.1em, #FFC600 0 0 0.1em, #FFC600 0 0 0.1em, #FFC600 0 0 0.1em, white 0 0 0.2em, white 0 0 0.2em;
     }
 
-#footerfont {
-    margin: 0;
-
-    font: ultra-condensed 4em "mycursive", cursive;
-    text-shadow: #FFC600 0 0 0.2em, white 0 0 0.2em, #FFC600 0 0 0.3em, #FFC600 0 0 0.1em;
+.footerfont.special {
+     text-shadow: #FFC600 0 0 0.1em, #FFC600 0 0 0.1em, #FFC600 0 0 0.1em, white 0 0 0.2em;
     }
 
 </style>
 
-<body>
+<body class="postbody special">
 
-    <h1 class="postname">fake teeth</h1>
+    <h1 class="postname special">fake teeth</h1>
 
     <div class="postbulk">
 
@@ -131,7 +113,7 @@ body {
     </div>
 
     <footer class="postfooter">
-        <p id="footerfont">post written 11/2/2024</p>
+        <p class="footerfont special">post written 11/2/2024</p>
     </footer>
 
 </body>
