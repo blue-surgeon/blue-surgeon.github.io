@@ -30,7 +30,7 @@
 #abouttitle {
 	margin: 0;
 
-	font: 20.5em "mymonospace", monospace;
+	font: 23vmin "mymonospace", monospace;
 	-webkit-text-stroke: 2px black;
 	letter-spacing: -0.075em;
 	color: transparent;
@@ -39,7 +39,7 @@
 // b u l k
 //bulk of the page
 .aboutbulk {
-	transform: translateY(-12em);
+	transform: translateY(-12vmin);
 
 	background: rgba(255,255,255,0.8);
 
@@ -49,8 +49,8 @@
 
 //text 
 #abouttext {
-	padding: 5% 3% 3% 3%;
+	padding: 8% 5% 5% 5%;
 
-	font: 4em "Georgia", serif;
+	font: 2em "Arial", sans-serif;
 	text-shadow: white 0 0 0.5em, white 0 0 0.5em;
 	}
