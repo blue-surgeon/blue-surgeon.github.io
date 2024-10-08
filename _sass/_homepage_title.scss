@@ -1,1 +1,13 @@
-homepage_title
+//homepage_title
+
+#homepagetitle { 
+	margin: 0;
+	z-index: 300;
+	text-align: end;
+
+	font: 12vmax/0.8em "mymonospace";
+	color: white;
+	letter-spacing: -0.07em;
+	font-weight: 700;
+	text-shadow: blue 0 0 0.2em, blue 0 0 0.1em;
+	}

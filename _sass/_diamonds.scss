@@ -1,0 +1,73 @@
+// diamonds on homepage
+
+ //centering the links over top the diamonds
+ .diamond { 
+ 	display: flex;
+  	justify-content: center;
+  	align-items: center;
+ 	}
+
+//links in the diamonds + links upon hover
+.diamondlinks { 
+	z-index: 999 !important;
+	text-align: center;
+
+	font: 4em "Georgia";
+  	color: blue;
+	text-decoration: none;
+
+	position: absolute;
+
+		&:hover { 
+		text-decoration: underline;
+		text-decoration-thickness: 10%;
+		color: black; 
+		}
+	}
+
+//size, placement, font size of each diamond
+#red_diamond { 
+	margin-top: 20vh;
+
+	left: 15%;
+
+	font-size: 1.6em;
+
+	position: absolute;
+	}
+
+#yellow_diamond { 
+	right: 0%;
+	z-index: 200;
+
+	font-size: 1.4em;
+
+	position: absolute;
+	}
+
+#pink_diamond { 
+	margin-bottom: 20vh;
+
+	left: 0%;
+
+	font-size: 1.5em;
+
+	position: absolute;
+	}
+
+#smallpink_diamond { 
+	margin-top: 10vh;
+
+	 left:22%;
+
+	position: absolute;
+	}
+
+#white_diamond {
+	right: 0%;
+	z-index: 100;
+
+	font-size: 1.75em;
+
+	position: absolute; 
+	}

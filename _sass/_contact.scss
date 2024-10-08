@@ -1,0 +1,60 @@
+//css for contact page
+
+
+.contactbody {
+	margin: 10%;
+
+	background: url(/assets/images/contactart.png) 50% 0% repeat, url(/assets/images/contactart.png) 0% 90% repeat #9F9AF2;
+	background-size: 50%, 50%;
+	background-origin: content-box;
+	font: 62.5%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+
+// b u l k 
+//the box the text goes in (above and below)
+.contactbulk {
+	margin: 5%;
+	padding: 5%;
+	width: 90%;
+
+	background-color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	}
+
+//the text itself
+.contacttext {
+	margin:0;
+
+	font: 4em "Georgia", serif;
+	text-align: center;
+	text-shadow: white 0 0 0.3em, white 0 0 0.3em,white 0 0 0.3em, white 0 0 0.3em;
+	}
+
+// t i t l e 
+//box for the title
+.contacttitlebox {
+	margin:0;
+	padding:0;
+
+	background: linear-gradient(180deg, white 5%, #9F9AF2 50%, white 95%);
+	background-clip: text;
+
+	display: flex;
+	}
+
+//title itself
+ #contacttitle {
+ 	margin: 0;
+ 	height: 0.8em;
+
+	font: bold 16em/0.85em "mymonospace", monospace;
+	font-weight: 500;
+	letter-spacing: -0.1em;
+	color: transparent;
+	-webkit-text-stroke: 2px black;
+ }
+

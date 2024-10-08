@@ -1,0 +1,56 @@
+// about page css
+
+
+//body of the page
+.aboutbody {
+	padding: 4vh 20% 20% 20%;
+	margin:0;
+
+	background: url(/assets/images/backdrop_invert.png) top center repeat, maroon;
+	background-size: 120%;
+	font-size: 62.5%;
+
+	display: flex;
+	flex-direction: column-reverse;
+	}
+
+// t i t l e
+//box the title goes in
+.abouttitlebox {
+	display: flex;
+	justify-content: center;
+
+	background: linear-gradient(180deg, white 30%, aquamarine 60%);
+	background-clip: text; //will only work on most browsers without position related cues, ie like z-index
+
+	filter: drop-shadow(0 -0.2em 0.5em black);
+	}
+
+//title itself
+#abouttitle {
+	margin: 0;
+
+	font: 20.5em "mymonospace", monospace;
+	-webkit-text-stroke: 2px black;
+	letter-spacing: -0.075em;
+	color: transparent;
+	}
+
+// b u l k
+//bulk of the page
+.aboutbulk {
+	transform: translateY(-12em);
+
+	background: rgba(255,255,255,0.8);
+
+	display: flex;
+	justify-content: center;
+	}
+
+//text 
+#abouttext {
+	padding: 5% 3% 3% 3%;
+
+	font: 4em "Georgia", serif;
+	text-shadow: white 0 0 0.5em, white 0 0 0.5em;
+	}

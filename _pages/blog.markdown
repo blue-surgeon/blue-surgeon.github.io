@@ -3,7 +3,7 @@ layout: post
 title: qoqoqoqoq
 permalink: /post/
 my_image: url(/assets/images/tile1_pretty.png)
-my_color: pink
+my_color: white
 my_size: 70%
 date_written: 11/2/2024
 ---

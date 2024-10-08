@@ -1,0 +1,38 @@
+//homepage_structure
+
+.homepagebody {
+	margin: 0;
+	min-height: 100%;
+
+	background: url(/assets/images/homepageart.png) top right no-repeat, url(/assets/images/homepageartflip.png) left bottom no-repeat blue;
+	font-size: 62.5%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+
+	position: relative; 
+	} 
+
+//contains red and yellow diamonds
+.top-column { 
+	flex: 1 0 35%;
+	display: flex;
+  	align-items: center;
+	}
+
+//contains title
+.middle-column {
+  	display: flex;
+  	justify-content: center;
+
+  	position: relative;
+	 }
+
+//contains pink and white diamonds 
+ .bottom-column { 
+ 	flex: 1 0 35%;
+  	display: flex;
+  	align-items: center;
+	 }

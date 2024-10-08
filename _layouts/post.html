@@ -1,175 +1,71 @@
 ---
-
 ---
 <!DOCTYPE html>
 
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
+
+    <meta charset="UTF-8">
     <meta name="author" content="Blue Surgeon">
     <meta name="keywords" content="Blue Surgeon, music">
-    <link href='https://ufonts.com/fonts/urw-chancery-l-medium-italic.html' title='URW Chancery L Regular Font Download - ufonts.com'></link>
+    <link rel="stylesheet" href="/assets/css/styles/style.css"> </link>
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"></link>
+
 </head>
 
 <style>
 
 body {
-    min-height: 100%;
     padding: 4vh 10% 8% 10%; /*padding top right bottom left*/
+
     background: {{ page.my_image }} top center repeat {{ page.my_color }};
     background-size: {{ page.my_size }};
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
     align-items: center; 
-    }
-
-h1 { /*title*/
-    top: 3vh;
-    margin: 0; 
-    z-index: 100;
-
-    font: ultra-condensed 12em/0.55em "URW Chancery L", cursive; /*font stretch, font size/line height, font-family*/
-    color: black;
-    letter-spacing: -0.1em;
-    text-align: center;
-    text-shadow: yellow 0 0 0.1em, yellow 0 0 0.1em, white 0 0 0.2em, yellow 0 0 0.2em;
-
-    position: sticky; 
-    }
-
-.bulk { /*bulk of page, contents of post*/
-    max-width:70vw;
-    /*background: rgba(255,255,255,0.7);*/
-    z-index: 50;
-
-    display: flex;
-    flex: 0 1 auto;
-    flex-direction: row;
-    justify-content: center;
-    align-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1%; 
-    }
-
-.bulktext { /*text in post*/
-    padding: 4vmax 5% 5% 5%;
-    margin: 0%;
-
-     font: 2em "Georgia", serif; 
-      text-shadow: white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em, white 0 0 1em;
-     background: rgba(255,255,255,0.7);
-
-    display: inline-flex;
-    }
-
-/*#bulkytext { /*backdrop behind text*/
-   /* background: rgba(255,255,255,0.8); 
-    }*/
-
-.bottombox { /*for fomatting the boxes of links at the bottom of the page*/
-    padding: 3% 5% 5% 5%;
-
-    display: flex;
-    flex: 0 1 90%;
-    justify-content: center;
-    align-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2%; 
-    }
-
-.bottomlinks { /*formatting the boxes and font*/
-    padding: 2%;
-    margin-bottom: 2%;
-    z-index: 150;
-
-    background: rgba(255,255,255,0.7);
-    border-radius: 5px;
-
-    display: flex;
-    flex: 0 1 auto;
-    justify-content: center;
-    align-items: center; 
-    }
-
-.bottomlinks:hover {
-    box-shadow: darkblue 0 0 1em, black 0 0 0.5em;
-     background: rgba(255,255,255,0.9);
-    text-decoration: underline;
-    text-decoration-thickness: 10%;
-    color: black; 
-    }
-
-.bottomlinksfont { 
-    margin: 0; 
-
-    font: 3vmin "DM mono", monospace;
-    color: darkblue;
-    } /*needed to be separate, not sure why*/
-
-.bottomlinksfont:hover {
-     text-decoration: underline;
-    text-decoration-thickness: 10%;
-    color: black; 
-    }
-
-footer { /*bottom title, date written*/
-    left: 0%;
-    bottom: 2vh;
-    width: 100%;
-    z-index: 100;
-
-    position: fixed; 
-    }
-
-#footerfont { /*font in bottom title, similar to title*/
-    margin: 0;
-
-    font: ultra-condensed 4em "URW Chancery L", cursive;
-    color: black;
-    text-align: center;
-    text-shadow: yellow 0 0 0.2em, white 0 0 0.2em, yellow 0 0 0.3em, yellow 0 0 0.1em;
-    text-decoration: none;
-    line-height: 1em; 
     }
 
 </style>
 
 <body>
-    <h1>{{ page.title }}</h1>
 
-    <div class="bulk">
+    <h1 class="postname">{{ page.title }}</h1>
 
-       <span class="bulktext">   
+    <div class="postbulk">
+
+       <span class="posttext">   
             <span>{{ content }}</span>
         </span>
 
         <div class="bottombox">
+
             <button class="bottomlinks">
                 <a href="/about/" class="bottomlinksfont">about</a>
             </button>
+
             <!--<button class="bottomlinks">
                 <a class="bottomlinksfont">subscribe</a>
             </button>-->
+
             <button class="bottomlinks">
                 <a href="/contact/" class="bottomlinksfont">contact</a>
             </button>
+
             <!--<button class="bottomlinks">
                 <a href="/archive/" class="bottomlinksfont">archive</a>
             </button>-->
+
             <button class="bottomlinks">
                 <a href="/"class="bottomlinksfont">home</a>
             </button>
+            
         </div>
 
     </div>
 
-    <footer>
+    <footer class="postfooter">
         <p id="footerfont">post written {{ page.date_written }}</p>
     </footer>
 

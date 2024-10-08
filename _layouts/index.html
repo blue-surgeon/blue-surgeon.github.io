@@ -1,201 +1,67 @@
+---
+---
 
 <!DOCTYPE html> 
+
 <html>
+
 <head>
 
 	<meta charset="UTF-8">
 	<meta name="author" content="Blue Surgeon">
 	<meta name="keywords" content="Blue Surgeon, music">
-
+	<link rel="stylesheet" href="/assets/css/styles/style.css"> </link>
 	<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"></link>
+
 </head>
-<body>
 
 <style>
 
 html { height: 100%; }
 
-body {
-	margin: 0;
-	min-height: 100%;
-
-	background: url(/assets/images/homepageart.png) top right no-repeat, url(/assets/images/homepageartflip.png) left bottom no-repeat blue;
-	font-size: 62.5%;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: stretch;
-
-	position: relative; 
-	} 
-
-.top-column { /*red and yellow diamonds*/
-	flex: 1 0 35%;
-	display: flex;
-	justify-content: center;
-  align-items: center;
-	}
-
-.middle-column { /*title*/
-	flex: 0 1 content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: relative;
-	 }
-
- .bottom-column { /*pink and white diamonds, same as top-column, kept separate just in case*/
- 	flex: 1 0 35%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-	 }
-
- .diamond { /*centering the links over top the diamonds*/
- 	display: flex;
-  justify-content: center;
-  align-items: center;
- 	}
-
-.font { /*title*/
-	margin: 0;
-	z-index: 500;
-	text-align: end;
-
-	font: 12vmax/0.8em "DM Mono", monospace; /*font-size: 11em; font stretch, font size/line height, font-family*/
-	color: white;
-	letter-spacing: -0.07em;
-	font-weight: 700;
-	text-shadow: blue 0 0 0.2em, blue 0 0 0.1em;
-	/*-webkit-text-stroke: 3px white;*/
-
-	/*animation: glow 3s ease-in-out infinite alternate;*/
-	}
-
-@keyframes glow { /*glowing animation around title*/
-	from { text-shadow: 
-		#C967E4 0 0 0.1em, #C967E4 0 0 0.1em, #C967E4 0 0 0.2em, #C967E4 0 0 0.2em; }
-	to { text-shadow: 
-		white 0 0 0.1em, #C967E4 0 0 0.1em, #C967E4 0 0 0.2em, white 0 0 0.2em; }
-	}
-
-.diamondlinks { /*links on the diamonds*/
-	padding: 10px 8px;
-	z-index: 999 !important;
-	text-align: center;
-
-	font: 4em "Georgia";
-  color: blue;
-  border-radius: 10px; 
-	text-decoration: none;
-	line-height: 1.2em;
-
-	position: absolute;
-	} 
-
-.diamondlinks:hover { /*links upon hover*/
-	text-decoration: underline;
-	text-decoration-thickness: 10%;
-	color: black;
-	}
-
-#red_diamond { 
-	margin-top: 20vh;
-
-	left: 15%;
-
-	font-size: 1.6em;
-
-	position: absolute;
-	}
-
-#yellow_diamond { 
-	right: 0%;
-
-	font-size: 1.4em;
-
-	position: absolute;
-	}
-
-#pink_diamond { 
-	margin-bottom: 20vh;
-
-	left: 0%;
-
-	font-size: 1.5em;
-
-	position: absolute;
-	}
-
-#smallpink_diamond { 
-	margin-top: 10vh;
-	z-index: 401;
-
-	 left:22%;
-
-	position: absolute;
-	}
-
-#white_diamond {
-	right: 0%;
-
-	font-size: 1.75em;
-
-	position: absolute; 
-	}
-
-/*#backdrop {
-	position: absolute;
-	z-index: 0;
-}
-/*#bluepink_diamond { 
-	position: absolute;
-	z-index: 450;
-}*/
-
-/*clean up z-index situation and font sized in the diamonds*/
-
 </style>
-<body>
+
+<body class="homepagebody">
  
 <div class="top-column">
+
 	<div class="diamond" id="red_diamond">
-		<img src="/assets/images/red_diamond.png" alt="red diamond" style="z-index: 350">
+		<img src="/assets/images/red_diamond.png" alt="red diamond">
 		<a href="/post/" class="diamondlinks">latest<br>post</a>
 	</div>
+
 	<div class="diamond" id="yellow_diamond">
-		<img src="/assets/images/yellow_diamond.png" alt="yellow diamond" style="z-index: 451">
+		<img src="/assets/images/yellow_diamond.png" alt="yellow diamond">
 		<a href="/contact/" class="diamondlinks">contact</a>
 	</div>
+
 </div>
 
 <div class="middle-column">
-	<p class="font">blue surgeon</p>
-	<!--<img id="backdrop" src="/assets/images/backdrop.png" alt="optional backdrop">-->
-	<!--<div class="diamond" id= "bluepink_diamond">
-		<img src="/assets/images/bluepink_diamond.png" alt="blue & pink diamond">
-	</div>-->
+	<p id="homepagetitle">blue surgeon</p>
 </div>
 
 <div class="bottom-column">
+
 	<div class="diamond" id="pink_diamond">
-		<img src="/assets/images/pink_diamond.png" alt="pink diamond" style="z-index: 400">
+		<img src="/assets/images/pink_diamond.png" alt="pink diamond">
 		<a href="/about/" class="diamondlinks">about</a>
 	</div>
+
 	<div class="diamond" id="smallpink_diamond">
 		<img src="/assets/images/smallpink_diamond.png" alt="smallpink diamond">
-			<a href="/contact/" class="diamondlinks"><!--subscribe--></a>
+		<a href="/contact/" class="diamondlinks"><!--subscribe--></a>
 	</div>
-		<div class="diamond" id="white_diamond">
-		<img src="/assets/images/white_diamond.png" alt="white diamond" style="	z-index: 450">
+
+	<div class="diamond" id="white_diamond">
+		<img src="/assets/images/white_diamond.png" alt="white diamond">
 		<a href="#" class="diamondlinks"><!--archive--></a>
 	</div>
+
 </div>
 
-
 </body>
+
 </html>
 
 
