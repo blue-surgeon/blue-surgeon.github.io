@@ -1,28 +1,9 @@
 //post titles top and bottom
 
-//name of post
-.postname { 
-    margin: 0; 
-    z-index: 100;
-
-    font: ultra-condensed 12em/0.55em "mycursive", cursive;
-    letter-spacing: -0.06em;
-    text-shadow: yellow 0 0 0.1em, yellow 0 0 0.1em, white 0 0 0.2em, yellow 0 0 0.2em;
-
-    position: sticky; 
-    }
-
 //date post was written
 .postfooter { 
     bottom: 2vh;
     z-index: 100;
 
     position: fixed; 
-    }
-
-#footerfont {
-    margin: 0;
-
-    font: ultra-condensed 4em "mycursive", cursive;
-    text-shadow: yellow 0 0 0.2em, white 0 0 0.2em, yellow 0 0 0.3em, yellow 0 0 0.1em;
     }
