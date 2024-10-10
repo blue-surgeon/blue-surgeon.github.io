@@ -32,6 +32,7 @@ twitter_username: jekyllrb
 github_username:  blue-surgeon
 
 sass:
+  sass_dir: _sass
   style: compressed
 
 
