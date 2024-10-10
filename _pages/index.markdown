@@ -5,12 +5,3 @@ layout: index
 title: Home
 permalink: /
 ---
-# Hello, Jekyll!
-
-Check out these other pages:
-
-- [About](/about/)
-
-	<div class="textchild">
-		<p class="font">blue<br>surgeon</p>
-	</div>
