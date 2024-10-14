@@ -7,8 +7,8 @@
 	padding: 4vh 20% 20% 20%;
 	margin:0;
 
-	background: url(/assets/images/backdrop_invert.png) top center repeat, maroon;
-	background-size: 120%;
+	background: url(/assets/images/backdrop_new.png) top center repeat, aquamarine;
+	background-size: 60%;
 	font-size: 62.5%;
 
 	display: flex;
@@ -21,28 +21,30 @@
 	display: flex;
 	justify-content: center;
 
-	background: linear-gradient(180deg, white 30%, aquamarine 60%);
-	background-clip: text; //will only work on most browsers without position related cues, ie like z-index
-
-	filter: drop-shadow(0 -0.2em 0.5em black);
+	//background: linear-gradient(180deg, white 30%, aquamarine 60%);
+	//background-clip: text; //will only work on most browsers without position related cues, ie like z-index
+	//filter: drop-shadow(0 0 0.5em black);
 	}
 
 //title itself
 #abouttitle {
 	margin: 0;
 
-	font: 23vmin "mymonospace", monospace;
-	-webkit-text-stroke: 2px black;
+	z-index: 100;
+
+	font: 22em "mymonospace", monospace;
+	//-webkit-text-stroke: 2px black;
 	letter-spacing: -0.075em;
-	color: transparent;
+	color: black;
+	text-shadow: aquamarine 0 0 0.2em, aquamarine 0 0 0.1em, aquamarine 0 0 0.1em, aquamarine 0 0 0.1em;
 	}
 
 // b u l k
 //bulk of the page
 .aboutbulk {
-	transform: translateY(-12vmin);
+	transform: translateY(-11vmin);
 
-	background: rgba(255,255,255,0.8);
+	background: rgba(255,255,255,0.85);
 
 	display: flex;
 	justify-content: center;

@@ -4,7 +4,11 @@ title: Contact
 permalink: /contact/
 ---
 
-## Contact
+[Bandcamp](https://bluesurgeon.bandcamp.com/)
 
-Get in touch!
+*Email*: <blue00surgeon@gmail.com>
+
+[Instagram](https://www.instagram.com/blue.surgeon/)
+
+
 
