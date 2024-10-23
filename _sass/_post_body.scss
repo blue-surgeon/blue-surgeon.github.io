@@ -30,7 +30,7 @@
     text-shadow: white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em,white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em,white 0 0 0.15em, white 0 0 0.15em,white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em,white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em,white 0 0 0.15em, white 0 0 0.15em,white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em,white 0 0 0.15em;
 
     p,h2,h3 {
-    background: rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.2);
     }
 
     h2,h3 {
@@ -51,7 +51,8 @@
     a{
     color: black;
         &:hover {
-        color:blue;}
+        color:blue;
+        }
     }
 
     mark {
