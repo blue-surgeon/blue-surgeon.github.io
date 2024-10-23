@@ -37,7 +37,8 @@
 // b u l k
 //bulk of the page
 .aboutbulk {
-	background: rgba(127,255,212,0.8);
+	background: rgba(127,255,212,0.9);
+	border: 1em solid #7FFFD4;
 
 	display: flex;
 	justify-content: center;
@@ -47,6 +48,6 @@
 #abouttext {
 	padding: 0% 4% 4% 4%;
 
-	font: 2.5em/1.5 "Optima", "Arial", sans-serif;
+	font: 2.7em/1.5 "Optima", "Arial", sans-serif;
 	text-shadow: #7FFFD4 0 0 0.3em, #7FFFD4 0 0 0.3em, #7FFFD4 0 0 0.1em, #7FFFD4 0 0 0.1em, #7FFFD4 0 0 0.1em, #7FFFD4 0 0 0.2em, #7FFFD4 0 0 0.2em, #7FFFD4 0 0 0.2em;
 	}
