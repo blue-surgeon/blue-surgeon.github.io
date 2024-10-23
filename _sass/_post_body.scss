@@ -14,16 +14,48 @@
     max-width:70vw;
     z-index: 50;
 
+    background: rgba(255,255,255,0.5);
+
     display: flex;
     flex-wrap: wrap;
     }
 
 //text in post
 .posttext { 
-    padding: 4vmax 5% 5% 5%;
+    padding: 6vmax 10vw 5% 10vw;
 
-    font: 2em/1.5 "Optima", "Arial", sans-serif;
-    text-shadow: white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em, white 0 0 0.8em;
-    text-indent: 4%;
+    font: 1.3em/1.7 "Georgia", serif;
+    white-space: pre-line;
+    text-indent: 4% each-line;
+    text-shadow: white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em,white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em,white 0 0 0.15em, white 0 0 0.15em,white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em,white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em,white 0 0 0.15em, white 0 0 0.15em,white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em,white 0 0 0.15em;
+
+    p,h2,h3 {
     background: rgba(255,255,255,0.5);
+    }
+
+    h2,h3 {
+    display: inline-block;
+    margin: 0;
+    text-indent: 0;
+    }
+
+    p {
+    display: inline;
+    padding: 0.22em;
+    }
+
+    blockquote {
+    display:inline;
+    }
+
+    a{
+    color: black;
+        &:hover {
+        color:blue;}
+    }
+
+    mark {
+    background-color:  rgb(249,218,250);
+    }
+
     }
