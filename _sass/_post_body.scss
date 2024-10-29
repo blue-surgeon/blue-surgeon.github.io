@@ -30,7 +30,7 @@
     text-shadow: white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em;
 
     p,h2,h3 {
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.9);
     }
 
     h2,h3 {
@@ -57,6 +57,12 @@
 
     mark {
     background-color:  rgb(249,218,250);
+    }
+    
+    img {
+    float: left;
+    max-width: 60vw;
+    margin: 1em;
     }
 
     }
