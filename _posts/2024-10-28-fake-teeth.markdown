@@ -2,7 +2,7 @@
 layout: post
 title: fake teeth
 permalink: /fake-teeth/
-my_image: url(/assets/images/tile1_goth.png)
+my_image: url(/assets/images/fake_teeth/tile1_goth.png)
 my_color: white
 my_size: 70%
 glow_color: red
