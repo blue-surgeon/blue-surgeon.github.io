@@ -7,8 +7,8 @@
 	padding: 0% 20% 20% 20%;
 	margin: 0;
 
-	background: url(/assets/images/backdrop_new.png) top center repeat, #f8f8f8;
-	background-size: 60%;
+	background: url(/assets/images/anotherdrawing.jpg) top center repeat, white;
+	//background-size: 60%;
 	font-size: 62.5%;
 
 	display: flex;
@@ -31,14 +31,15 @@
 	font: 22em/1.2em "mymonospace", monospace;
 	letter-spacing: -0.075em;
 	color: black;
-	text-shadow: aquamarine 0 0 0.1em, aquamarine 0 0 0.05em, aquamarine 0 0 0.05em, aquamarine 0 0 0.05em,aquamarine 0 0 0.05em, aquamarine 0 0 0.05em,aquamarine 0 0 0.05em, aquamarine 0 0 0.05em;
+	text-shadow: white 0 0 0.1em, white 0 0 0.05em, white 0 0 0.05em, white 0 0 0.05em,white 0 0 0.05em, white 0 0 0.05em,white 0 0 0.05em, white 0 0 0.05em;
 	}
 
 // b u l k
 //bulk of the page
 .aboutbulk {
-	background: rgba(127,255,212,0.95);
-	//border: 1em solid #7FFFD4;
+	background: rgba(255,255,255,0.85);
+	//border: 1em solid white;
+	border-radius: 12px;
 
 	display: flex;
 	justify-content: center;
@@ -49,5 +50,5 @@
 	padding: 0% 4% 4% 4%;
 
 	font: 2.7em/1.5 "Georgia", serif;
-	text-shadow: #7FFFD4 0 0 0.3em, #7FFFD4 0 0 0.3em, #7FFFD4 0 0 0.1em, #7FFFD4 0 0 0.1em, #7FFFD4 0 0 0.1em, #7FFFD4 0 0 0.1em, #7FFFD4 0 0 0.1em,#7FFFD4 0 0 0.1em, #7FFFD4 0 0 0.1em,#7FFFD4 0 0 0.1em, #7FFFD4 0 0 0.1em,#7FFFD4 0 0 0.2em, #7FFFD4 0 0 0.2em, #7FFFD4 0 0 0.2em;
+	text-shadow: white 0 0 0.3em, white 0 0 0.3em, white 0 0 0.1em, white 0 0 0.1em, white 0 0 0.1em, white 0 0 0.1em, white 0 0 0.1em,white 0 0 0.1em, white 0 0 0.1em,white 0 0 0.1em, white 0 0 0.1em,white 0 0 0.2em, white 0 0 0.2em, white 0 0 0.2em;
 	}
