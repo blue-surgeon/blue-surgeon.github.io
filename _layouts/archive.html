@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="author" content="Blue Surgeon">
+	<meta name="keywords" content="Blue Surgeon, music, about">
+	<link rel="stylesheet" href="/assets/css/styles/mystyle.css">
+	<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+</head>
+
+<body class="archivebody">
+	<div class="archivetitlebox">
+		<p id="archivetitle">{{ page.title }}</p>
+	</div>
+
+	<div class="archivebulk">
+		<span id="archivetext">
+		<ul>
+  			{% for post in site.posts %}
+    			<li>
+    			{{ post.date | date: "%B %Y"}}&nbsp<a href="{{ post.url }}">{{ post.title }}</a>
+    			{{ post.excerpt }}
+    			</li>
+ 	 		{% endfor %}
+		</ul>
+	</span>
+	</div>
+	
+
+
+</body>
+
+</html>
