@@ -60,10 +60,6 @@ plugins:
     #values:
       #is_post: false
       #layout: default
-{% for post in site.posts %}
-  {% assign excerptParts = post.excerpt | split: "<!-- excerpt-start -->" %}
-  {{ excerptParts[1] | strip_newlines | truncatewords: 50 }}
-{% endfor %}
 
 
 # Exclude from processing.
