@@ -5,7 +5,7 @@ permalink: /estrange/
 my_image: url(/assets/images/estrange/estrange.jpg)
 my_color: white
 my_size: 120%
-glow_color: cadetblue
+glow_color: lightskyblue
 date_written: 11/30/2024
 ---
 Y’all, when I think November, I think estrangement. I’ve been estranged from my family for years at this point, and the holidays are often a tough reminder. I’m happy to say it’s so much easier now, 9 years later, partly because I grew so much in that time. I know that intuitively, but I also know that because I recently listened to an EP I wrote at the beginning of my estrangement journey.
