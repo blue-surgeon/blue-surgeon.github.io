@@ -29,12 +29,16 @@
     text-indent: 4% each-line;
     text-shadow: white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em, white 0 0 0.15em;
 
-    p,h2,h3 {
+    p,h1,h2,h3,li {
     background: rgba(255,255,255,0.9);
     }
 
-    h2,h3 {
-    display: inline-block;
+    ul {
+      list-style: square inside;
+      }
+
+    h1,h2,h3 {
+    display: inline;
     margin: 0;
     text-indent: 0;
     }
