@@ -34,8 +34,10 @@
     }
 
     ul {
-      list-style: square inside;
-      }
+      list-style-type: square;
+      list-style-position: inside;
+      padding: 0;
+    }
 
     h1,h2,h3 {
     display: inline;
